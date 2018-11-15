@@ -65,7 +65,7 @@
 
                                 </ul>
                             </li>															
-                            <li><a href="./products.html">Armor</a></li>			
+                            <li><a href="Armor">Armor</a></li>			
                             <li><a href="./products.html">Item</a>
                                 <ul>									
                                     <li><a href="./products.html">Gifts and Tech</a></li>
@@ -187,38 +187,33 @@
                         <br/>
 
                         <div class="row">
-
                             <div class="span12">
-
                                 <h4 class="title">
-                                    <span class="pull-left"><span class="text"><span class="line">Latest <strong>Products</strong></span></span></span>
-
+                                    <span class="pull-left"><span class="text"><span class="line">Feature <strong>Products</strong></span></span></span>
+                                    <span class="pull-right">
+                                        <a class="left button" href="#myCarousel" data-slide="prev"></a><a class="right button" href="#myCarousel" data-slide="next"></a>
                                     </span>
                                 </h4>
-
-                                <div id="myCarousel-2" class="myCarousel carousel slide">
-                                    <div class="carousel-inner">
-
-                                        <div class="active item">
-                                            <table class="thumbnails">
+                                <div id="myCarousel" class="myCarousel carousel slide">
+                                    <div class="active item">
+                                        <table class ="thumbnails">
+                                            <c:forEach items="${weapons}" var="w" varStatus="vs">
                                                 <tr>
-                                                    <c:forEach items="${weapons}" var="w" varStatus="vs">
-                                                        <td>
-                                                            <div class="product-box">
-                                                                <a href="product_detail.html"><img src ="Image/${w.productno}.png"widtd="120"></a>
-                                                                <a href="product_detail.html" class="title">${w.productname}</a><br/>
-                                                                <a href="products.html" class="category">${w.type}</a>
-                                                                <p class="price">${w.price}</p>
-                                                            </div>
-                                                        </td>
-                                                    </c:forEach>
-                                                </tr>
-                                            </table>
-                                        </div>
-
+                                                    <td>
+                                                        <div class="product-box">
+                                                            <a href="product_detail.html"><img src ="Image/${w.productno}.png"widtd="120"></a>
+                                                            <a href="product_detail.html" class="title">${w.productname}</a><br/>
+                                                            <a href="products.html" class="category">${w.type}</a>
+                                                            <p class="price">${w.price}</p>
+                                                        </div>
+                                                    </td>
+                                                    </tr>
+                                                </c:forEach>
+                                        </table>
+                                        
                                     </div>
                                 </div>
-                            </div>				
+                            </div>						
                         </div>
                     </div>				
                 </div>
