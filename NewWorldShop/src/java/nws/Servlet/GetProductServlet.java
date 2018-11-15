@@ -48,7 +48,7 @@ UserTransaction utx;
             Weapon weapons = wmc.findWeapon(productno);
             System.out.println("Product NO. : " + weapons.getProductno());
             request.setAttribute("weapons", weapons);
-            getServletContext().getRequestDispatcher("/product_detail.jsp").forward(request, response);
+            getServletContext().getRequestDispatcher("/ViewProductDetail.jsp").forward(request, response);
         }
     }
 

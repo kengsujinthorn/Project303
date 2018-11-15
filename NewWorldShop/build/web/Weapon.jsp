@@ -13,10 +13,10 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Weapon</title>
         <script src ="https://code.jquery.com/jquery-3.3.1.js"></script>
-        
+        <link href="bootstrap/css/bootstrap3.css" rel="stylesheet"/>
     </head>
     <body>
-    <jsp:include page="Include/Header.jsp?title=Product Listing::" />
+    <jsp:include page="Include/WeaponHeader.jsp?title=Product Listing::" />
    
     <select id="Weaponbox"  onkeyup="myFunction2()"> 
     <option value="">Select one...</option>

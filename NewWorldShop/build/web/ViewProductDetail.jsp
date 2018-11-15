@@ -12,7 +12,7 @@
         <title>Detail</title>
     </head>
     <body>
-        <jsp:include page="Include/Header.jsp?title=Product Listing::" />
+        <jsp:include page="Include/WeaponHeader.jsp?title=Product Listing::" />
         <table>
             <tr>      
                 <td><img src ="Image/${weapons.productno}.png"widtd="120"></td>
