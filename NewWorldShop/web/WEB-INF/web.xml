@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>WeaponServlet</servlet-name>
+        <servlet-class>nws.Servlet.WeaponServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ArmorServlet</servlet-name>
+        <servlet-class>nws.Servlet.ArmorServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>HomepageServlet</servlet-name>
+        <servlet-class>nws.Servlet.HomepageServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>GetProductServlet</servlet-name>
+        <servlet-class>nws.Servlet.GetProductServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>WeaponServlet</servlet-name>
+        <url-pattern>/Weapon</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ArmorServlet</servlet-name>
+        <url-pattern>/Armor</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>HomepageServlet</servlet-name>
+        <url-pattern>/Homepage</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>GetProductServlet</servlet-name>
+        <url-pattern>/GetProduct</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
