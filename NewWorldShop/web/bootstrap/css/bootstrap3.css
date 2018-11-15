@@ -13,34 +13,34 @@
  */
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,700");
 :root {
-  --blue: #008cba;
-  --indigo: #6610f2;
-  --purple: #6f42c1;
-  --pink: #e83e8c;
-  --red: #F04124;
-  --orange: #fd7e14;
-  --yellow: #E99002;
-  --green: #43ac6a;
-  --teal: #20c997;
-  --cyan: #5bc0de;
-  --white: #fff;
-  --gray: #888;
-  --gray-dark: #333;
-  --primary: #008cba;
-  --secondary: #eee;
-  --success: #43ac6a;
-  --info: #5bc0de;
-  --warning: #E99002;
-  --danger: #F04124;
-  --light: #eee;
-  --dark: #222;
-  --breakpoint-xs: 0;
-  --breakpoint-sm: 576px;
-  --breakpoint-md: 768px;
-  --breakpoint-lg: 992px;
-  --breakpoint-xl: 1200px;
-  --font-family-sans-serif: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  blue: #008cba;
+  indigo: #6610f2;
+  purple: #6f42c1;
+  pink: #e83e8c;
+  red: #F04124;
+  orange: #fd7e14;
+  yellow: #E99002;
+  green: #43ac6a;
+  teal: #20c997;
+  cyan: #5bc0de;
+  white: #fff;
+  gray: #888;
+  gray-dark: #333;
+  primary: #008cba;
+  secondary: #eee;
+  success: #43ac6a;
+  info: #5bc0de;
+  warning: #E99002;
+  danger: #F04124;
+  light: #eee;
+  dark: #222;
+  breakpoint-xs: 0;
+  breakpoint-sm: 576px;
+  breakpoint-md: 768px;
+  breakpoint-lg: 992px;
+  breakpoint-xl: 1200px;
+  font-family-sans-serif: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
 *,
