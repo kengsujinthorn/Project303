@@ -81,6 +81,29 @@
                     </nav>
                 </div>
             </section>
+<script>
+            function myFunction() {
+  var input, filter, table, tr, td, i ,select,weaponfilter;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("weaponTable");
+  tr = table.getElementsByTagName("tr");
+  select = document.getElementById("Weaponbox");
+  weaponfilter = select.value.toUpperCase();
+
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[3];
+    if (td) {
+      if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } 
+      else {
+        tr[i].style.display = "none";
+      }
+    }       
+  }
+}
+        </script>
 <hr>
 <hr>
     </body>
