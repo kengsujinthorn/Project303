@@ -35,6 +35,8 @@
        <body>		
         <div id="top-bar" class="container">
             <div class="row">
+                <div class="span4">
+                </div>
                 <div class="span8">
                     <div class="account pull-right">
                         <ul class="user-menu">				
