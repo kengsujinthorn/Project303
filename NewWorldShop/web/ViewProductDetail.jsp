@@ -3,7 +3,7 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<title>Bootstrap E-commerce Templates</title>
+		<title>${weapons.productname}</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="description" content="">
 		<!--[if ie]><meta content='IE=8' http-equiv='X-UA-Compatible'/><![endif]-->
@@ -30,19 +30,9 @@
 	</head>
     <body>	
         <jsp:include page="Include/Header.jsp?title=Product Listing::" />
-		<div id="top-bar" class="container">
-			<div class="row">
-				<div class="span4">
-					<form method="POST" class="search_form">
-						<input type="text" id="myInput" onkeyup="myFunction()" class="input-block-level search-query" Placeholder="eg. T-sirt">
-					</form>
-				</div>
-				
-			</div>
-		</div>
 		<div id="wrapper" class="container">
 			<section class="header_text sub">
-			<img class="pageBanner" src="themes/images/pageBanner.png" alt="New products" >
+			<img class="pageBanner" src="Image/Banner.jpg" alt="New products" >
 				<h4><span>Product Detail</span></h4>
 			</section>
 			<section class="main-content">				
@@ -101,7 +91,7 @@
 					</div>
 				</div>
 			</section>			
-		
+		<jsp:include page="Include/footer.jsp?title=Product Listing::" />
 		</div>
 		<script src="themes/js/common.js"></script>
 		<script>

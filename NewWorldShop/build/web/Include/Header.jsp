@@ -8,7 +8,7 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <head>
 		<meta charset="utf-8">
-		<title>Bootstrap E-commerce Templates</title>
+		<title>Header</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="description" content="">
 		<!--[if ie]><meta content='IE=8' http-equiv='X-UA-Compatible'/><![endif]-->
@@ -35,11 +35,6 @@
        <body>		
         <div id="top-bar" class="container">
             <div class="row">
-                <div class="span4">
-                    <form method="POST" class="search_form">
-                        <input type="text" class="input-block-level search-query" Placeholder="Search">
-                    </form>
-                </div>
                 <div class="span8">
                     <div class="account pull-right">
                         <ul class="user-menu">				
@@ -104,6 +99,4 @@
   }
 }
         </script>
-<hr>
-<hr>
     </body>
