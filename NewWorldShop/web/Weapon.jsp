@@ -24,9 +24,8 @@
     </head>
     <body>
         <jsp:include page="Include/Header.jsp?title=Product Listing::" />
-
-        <select id="Weaponbox"  onkeyup="myFunction2()"> 
-            <option value="">Select one...</option>
+        <select id="Typebox"  onkeyup="myFunction2()"> 
+            <option value="">Sort by type.</option>
             <option value="Great Sword">Great Sword</option>
             <option value="Bow">Bow</option>
             <option value="Light Bowgun">Light Bowgun</option>
@@ -73,6 +72,7 @@
                     </c:forEach>
                 </tbody>
             </table>
+        </div>
             <script>
                 function myFunction() {
                     var input, filter, table, tr, td, i, select, weaponfilter;
@@ -96,7 +96,6 @@
                 }
 
             </script>
-        </div>
 
     </body>
 </html>

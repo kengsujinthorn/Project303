@@ -3,8 +3,8 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="utf-8">
-        <title>Home</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Weapon</title>
         <link rel="icon" href="Pic/MHW-Logo.jpg" type="image/gif" sizes="16x16">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="">
@@ -20,10 +20,6 @@
         <script src="bootstrap/js/bootstrap.min.js"></script>				
         <script src="themes/js/superfish.js"></script>	
         <script src="themes/js/jquery.scrolltotop.js"></script>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     </head>
     <body>		
         <jsp:include page="Include/Header.jsp?title=Product Listing::" />
@@ -79,7 +75,7 @@
                                                                 <div class="bs-example">
                                                                     <div class="product-box">
                                                                         <div data-toggle="popover" title="${w.productname} [${w.type}] ${w.price}">
-                                                                            <a href="product_detail.html"><img src ="Image/${w.productno}.png"></a>
+                                                                            <a href="GetProduct?productno=${w.productno}"><img src ="Image/${w.productno}.png"></a>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -99,7 +95,7 @@
                                                                 <div class="bs-example">
                                                                     <div class="product-box">
                                                                         <div data-toggle="popover" title="${w.productname} [${w.type}] ${w.price}">
-                                                                            <a href="product_detail.html"><img src ="Image/${w.productno}.png"></a>
+                                                                            <a href="GetProduct?productno=${w.productno}"><img src ="Image/${w.productno}.png"></a>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -135,7 +131,7 @@
                                                                 <div class="bs-example">
                                                                     <div class="product-box">
                                                                         <div data-toggle="popover" title="${w.productname} [${w.type}] ${w.price}">
-                                                                            <a href="product_detail.html"><img src ="Image/${w.productno}.png"></a>
+                                                                            <a href="GetProduct?productno=${w.productno}"><img src ="Image/${w.productno}.png"></a>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -155,7 +151,7 @@
                                                                 <div class="bs-example">
                                                                     <div class="product-box">
                                                                         <div data-toggle="popover" title="${w.productname} [${w.type}] ${w.price}">
-                                                                            <a href="product_detail.html"><img src ="Image/${w.productno}.png"></a>
+                                                                            <a href="GetProduct?productno=${w.productno}"><img src ="Image/${w.productno}.png"></a>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -191,7 +187,7 @@
                                                                 <div class="bs-example">
                                                                     <div class="product-box">
                                                                         <div data-toggle="popover" title="${w.productname} [${w.type}] ${w.price}">
-                                                                            <a href="product_detail.html"><img src ="Image/${w.productno}.png"></a>
+                                                                            <a href="GetProduct?productno=${w.productno}"><img src ="Image/${w.productno}.png"></a>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -211,7 +207,7 @@
                                                                 <div class="bs-example">
                                                                     <div class="product-box">
                                                                         <div data-toggle="popover" title="${w.productname} [${w.type}] ${w.price}">
-                                                                            <a href="product_detail.html"><img src ="Image/${w.productno}.png"></a>
+                                                                            <a href="GetProduct?productno=${w.productno}"><img src ="Image/${w.productno}.png"></a>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -247,7 +243,7 @@
                                                                 <div class="bs-example">
                                                                     <div class="product-box">
                                                                         <div data-toggle="popover" title="${w.productname} [${w.type}] ${w.price}">
-                                                                            <a href="product_detail.html"><img src ="Image/${w.productno}.png"></a>
+                                                                            <a href="GetProduct?productno=${w.productno}"><img src ="Image/${w.productno}.png"></a>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -267,7 +263,7 @@
                                                                 <div class="bs-example">
                                                                     <div class="product-box">
                                                                         <div data-toggle="popover" title="${w.productname} [${w.type}] ${w.price}">
-                                                                            <a href="product_detail.html"><img src ="Image/${w.productno}.png"></a>
+                                                                            <a href="GetProduct?productno=${w.productno}"><img src ="Image/${w.productno}.png"></a>
                                                                         </div>
                                                                     </div>
                                                                 </div>

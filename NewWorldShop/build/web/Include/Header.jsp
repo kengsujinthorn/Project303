@@ -66,7 +66,7 @@
 
                                 </ul>
                             </li>															
-                            <li><a href="./products.html">Armor</a></li>			
+                            <li><a href="Armor">Armor</a></li>			
                             <li><a href="./products.html">Item</a>
                                 <ul>									
                                     <li><a href="./products.html">Gifts and Tech</a></li>

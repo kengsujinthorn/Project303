@@ -7,55 +7,70 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Armor</title>
         <link rel="icon" href="Pic/MHW-Logo.jpg" type="image/gif" sizes="16x16">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap.min.css"> 
-        <script src ="https://code.jquery.com/jquery-3.3.1.js"></script>
-        <script src ="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
-        <script src ="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">      
+        <link href="bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
+
+        <link href="themes/css/bootstrappage.css" rel="stylesheet"/>
+
+        <link href="themes/css/flexslider.css" rel="stylesheet"/>
+        <link href="themes/css/main.css" rel="stylesheet"/>
+
+        <script src="themes/js/jquery-1.7.2.min.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>				
+        <script src="themes/js/superfish.js"></script>	
+        <script src="themes/js/jquery.scrolltotop.js"></script>
         <style>
-table, th, td {
-    border: 1px solid black;
-}
-table{
-    widtd: 100%;
-}
-th {
-    height: 50px;
-}
 </style>
     </head>
     
     <body>
-           <div class="container">
-        <table>
-            <tr>
-                <td>No.</td>
-                <td>Product No.</td>
-                <td>Product Name</td>
-                <td>Defense</td>
-                <td>Fire Resistant</td>
-                <td>Water Resistant</td>
-                <td>Thunder Resistant</td>
-                <td>Ice Resistant</td>
-                <td>Dragon Resistant</td>
-                <td>Price</td>
-        </tr>
-        <c:forEach items="${armors}" var="a" varStatus="vs">
-                <tr>
-                    <td>${vs.count}</td>
-                    <td>${a.productno}</td>                  
-                    <td>${a.productname}</td>
-                    <td>${a.defense}</td>
-                    <td>${a.fireresistant}</td>
-                    <td>${a.waterresistant}</td>
-                    <td>${a.thunderresistant}</td>
-                    <td>${a.iceresistant}</td>
-                    <td>${a.dragonresistant}</td>
-                    <td>${a.price}</td>
-                </tr>
-            </c:forEach>
-        </table>
-           </div>
+          <jsp:include page="Include/Header.jsp?title=Product Listing::" />
+
+        <select id="Weaponbox"  onkeyup="myFunction2()"> 
+            <option value="">Select one...</option>
+            <option value="Great Sword">Great Sword</option>
+            <option value="Bow">Bow</option>
+            <option value="Light Bowgun">Light Bowgun</option>
+            <option value="Heavy Bowgun">Heavy Bowgun</option>
+            <option value="Long Sword">Long Sword</option>
+            <option value="Dual Blade">Dual Blade</option>
+            <option value="Switch Axe">Switch Axe</option>
+        </select>
+        <div class="span4">
+            <form method="POST">
+                <input type="text" class="input-block-level search-query" id="myInput"  onkeyup="myFunction()" Placeholder="Search">
+            </form>
+        </div>
+        <div class="container">
+            <table class ="table table-hover table-dark" id="weaponTable">
+                <thead>
+                    <tr class ="header">
+                        <th scope="col">No.</th>
+                        <th scope="col">Image</th>
+                        <th scope="col">Product No.</th>
+                        <th scope="col">Product Name</th>
+                        <th scope="col">Defense</th>
+                        <th scope="col">price</th>
+                        <th scope="col">Add</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <c:forEach items="${armors}" var="a" varStatus="vs">
+                        <tr>
+                            <td>${vs.count}</td>
+                            <td><img src ="Image/${a.productno}.png"widtd="120"></td>
+                            <td><a href="GetProduct?productno=${a.productno}">${a.productno}</a></td> 
+                            <td>${a.productname}</td>
+                            <td>${a.defense}</td>  
+                            <td>${a.price}</td> 
+                            <td><button class="btn btn-inverse" type="submit">Add to cart</button></td
+                        </tr>
+                    </c:forEach>
+                </tbody>
+            </table>
+        </div>
     </body>
 </html>
 
