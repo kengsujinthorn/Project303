@@ -20,7 +20,10 @@
         <script src="bootstrap/js/bootstrap.min.js"></script>				
         <script src="themes/js/superfish.js"></script>	
         <script src="themes/js/jquery.scrolltotop.js"></script>
-
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     </head>
     <body>		
         <jsp:include page="Include/Header.jsp?title=Product Listing::" />
@@ -51,94 +54,16 @@
                                         <a class="left button" href="#myCarousel" data-slide="prev"></a><a class="right button" href="#myCarousel" data-slide="next"></a>
                                     </span>
                                 </h4>
-                                <div id="myCarousel" class="myCarousel carousel slide">
-                                    <div class="carousel-inner">
-                                        <div class="active item">
-                                            <ul class="thumbnails">												
-                                                <li class="span3">
-                                                    <div class="product-box">
-                                                        <span class="sale_tag"></span>
-                                                        <p><a href="GetProduct?productno=${w.productno}"><img src="themes/images/ladies/1.jpg" alt="" /></a></p>
-                                                        <a href="GetProduct?productno=${w.productno}" class="title">Ut wisi enim ad</a><br/>
-                                                        <a href="GetProduct?productno=${w.productno}" class="category">Commodo consequat</a>
-                                                        <p class="price">$17.25</p>
-                                                    </div>
-                                                </li>
-                                                <li class="span3">
-                                                    <div class="product-box">
-                                                        <span class="sale_tag"></span>
-                                                        <p><a href="GetProduct?productno=${w.productno}"><img src="themes/images/ladies/2.jpg" alt="" /></a></p>
-                                                        <a href="GetProduct?productno=${w.productno}" class="title">Quis nostrud exerci tation</a><br/>
-                                                        <a href="GetProduct?productno=${w.productno}" class="category">Quis nostrud</a>
-                                                        <p class="price">$32.50</p>
-                                                    </div>
-                                                </li>
-                                                <li class="span3">
-                                                    <div class="product-box">
-                                                        <p><a href="GetProduct?productno=${w.productno}"><img src="themes/images/ladies/3.jpg" alt="" /></a></p>
-                                                        <a href="GetProduct?productno=${w.productno}" class="title">Know exactly turned</a><br/>
-                                                        <a href="GetProduct?productno=${w.productno}" class="category">Quis nostrud</a>
-                                                        <p class="price">$14.20</p>
-                                                    </div>
-                                                </li>
-                                                <li class="span3">
-                                                    <div class="product-box">
-                                                        <p><a href="GetProduct?productno=${w.productno}"><img src="themes/images/ladies/4.jpg" alt="" /></a></p>
-                                                        <a href="GetProduct?productno=${w.productno}" class="title">You think fast</a><br/>
-                                                        <a href="GetProduct?productno=${w.productno}" class="category">World once</a>
-                                                        <p class="price">$31.45</p>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="item">
-                                            <ul class="thumbnails">
-                                                <li class="span3">
-                                                    <div class="product-box">
-                                                        <p><a href="GetProduct?productno=${w.productno}"><img src="themes/images/ladies/5.jpg" alt="" /></a></p>
-                                                        <a href="GetProduct?productno=${w.productno}" class="title">Know exactly</a><br/>
-                                                        <a href="GetProduct?productno=${w.productno}" class="category">Quis nostrud</a>
-                                                        <p class="price">$22.30</p>
-                                                    </div>
-                                                </li>
-                                                <li class="span3">
-                                                    <div class="product-box">
-                                                        <p><a href="GetProduct?productno=${w.productno}"><img src="themes/images/ladies/6.jpg" alt="" /></a></p>
-                                                        <a href="GetProduct?productno=${w.productno}" class="title">Ut wisi enim ad</a><br/>
-                                                        <a href="GetProduct?productno=${w.productno}" class="category">Commodo consequat</a>
-                                                        <p class="price">$40.25</p>
-                                                    </div>
-                                                </li>
-                                                <li class="span3">
-                                                    <div class="product-box">
-                                                        <p><a href="GetProduct?productno=${w.productno}"><img src="themes/images/ladies/7.jpg" alt="" /></a></p>
-                                                        <a href="GetProduct?productno=${w.productno}" class="title">You think water</a><br/>
-                                                        <a href="GetProduct?productno=${w.productno}" class="category">World once</a>
-                                                        <p class="price">$10.45</p>
-                                                    </div>
-                                                </li>
-                                                <li class="span3">
-                                                    <div class="product-box">
-                                                        <p><a href="GetProduct?productno=${w.productno}"><img src="themes/images/ladies/8.jpg" alt="" /></a></p>
-                                                        <a href="GetProduct?productno=${w.productno}" class="title">Quis nostrud exerci</a><br/>
-                                                        <a href="GetProduct?productno=${w.productno}" class="category">Quis nostrud</a>
-                                                        <p class="price">$35.50</p>
-                                                    </div>
-                                                </li>																																	
-                                            </ul>
-                                        </div>
-                                    </div>							
-                                </div>
                             </div>						
                         </div>
                         <br/>
 
                         <!--GS & SH-->
-                        
+
                         <div class="row">
                             <div class="span12">
                                 <h4 class="title">
-                                    <span class="pull-left"><span class="text"><span class="line">Great Sword<strong>|| Sword & Shield</strong></span></span></span>
+                                    <span class="pull-left"><span class="text"><span class="line">Great Sword<strong> || Sword & Shield</strong></span></span></span>
                                     <span class="pull-right">
                                         <a class="left button" href="#GS" data-slide="prev"></a><a class="right button" href="#GS" data-slide="next"></a>
                                     </span>
@@ -151,13 +76,12 @@
                                                     <c:forEach items="${weapons}" var="w" varStatus="vs">
                                                         <c:if test = "${w.type == 'Great Sword'}">
                                                             <td>
-                                                                <div class="product-box">
-                                                                    <a href="GetProduct?productno=${w.productno}"><img src ="Image/${w.productno}.png"></a>
-                                                                    <h6>
-                                                                        
-                                                                       
-                                                                        
-                                                                    </h6>
+                                                                <div class="bs-example">
+                                                                    <div class="product-box">
+                                                                        <div data-toggle="popover" title="${w.productname} [${w.type}] ${w.price}">
+                                                                            <a href="product_detail.html"><img src ="Image/${w.productno}.png"></a>
+                                                                        </div>
+                                                                    </div>
                                                                 </div>
                                                             </td>
                                                         </c:if>
@@ -172,13 +96,12 @@
                                                     <c:forEach items="${weapons}" var="w" varStatus="vs">
                                                         <c:if test = "${w.type == 'Sword & Shield'}">
                                                             <td>
-                                                                <div class="product-box">
-                                                                    <a href="GetProduct?productno=${w.productno}"><img src ="Image/${w.productno}.png"></a>
-                                                                    <h6>
-                                                                        
-                                                                       
-                                                                        
-                                                                    </h6>
+                                                                <div class="bs-example">
+                                                                    <div class="product-box">
+                                                                        <div data-toggle="popover" title="${w.productname} [${w.type}] ${w.price}">
+                                                                            <a href="product_detail.html"><img src ="Image/${w.productno}.png"></a>
+                                                                        </div>
+                                                                    </div>
                                                                 </div>
                                                             </td>
                                                         </c:if>
@@ -196,7 +119,7 @@
                         <div class="row">
                             <div class="span12">
                                 <h4 class="title">
-                                    <span class="pull-left"><span class="text"><span class="line">Dual Blade<strong>|| Long Sword</strong></span></span></span>
+                                    <span class="pull-left"><span class="text"><span class="line">Dual Blade<strong> || Long Sword</strong></span></span></span>
                                     <span class="pull-right">
                                         <a class="left button" href="#DB" data-slide="prev"></a><a class="right button" href="#DB" data-slide="next"></a>
                                     </span>
@@ -209,13 +132,12 @@
                                                     <c:forEach items="${weapons}" var="w" varStatus="vs">
                                                         <c:if test = "${w.type == 'Dual Blade'}">
                                                             <td>
-                                                                <div class="product-box">
-                                                                    <a href="GetProduct?productno=${w.productno}"><img src ="Image/${w.productno}.png"></a>
-                                                                    <h6>
-                                                                        
-                                                                       
-                                                                        
-                                                                    </h6>
+                                                                <div class="bs-example">
+                                                                    <div class="product-box">
+                                                                        <div data-toggle="popover" title="${w.productname} [${w.type}] ${w.price}">
+                                                                            <a href="product_detail.html"><img src ="Image/${w.productno}.png"></a>
+                                                                        </div>
+                                                                    </div>
                                                                 </div>
                                                             </td>
                                                         </c:if>
@@ -230,13 +152,12 @@
                                                     <c:forEach items="${weapons}" var="w" varStatus="vs">
                                                         <c:if test = "${w.type == 'Long Sword'}">
                                                             <td>
-                                                                <div class="product-box">
-                                                                    <a href="GetProduct?productno=${w.productno}"><img src ="Image/${w.productno}.png"></a>
-                                                                    <h6>
-                                                                        
-                                                                       
-                                                                        
-                                                                    </h6>
+                                                                <div class="bs-example">
+                                                                    <div class="product-box">
+                                                                        <div data-toggle="popover" title="${w.productname} [${w.type}] ${w.price}">
+                                                                            <a href="product_detail.html"><img src ="Image/${w.productno}.png"></a>
+                                                                        </div>
+                                                                    </div>
                                                                 </div>
                                                             </td>
                                                         </c:if>
@@ -254,7 +175,7 @@
                         <div class="row">
                             <div class="span12">
                                 <h4 class="title">
-                                    <span class="pull-left"><span class="text"><span class="line">Switch Axe<strong>|| Bow</strong></span></span></span>
+                                    <span class="pull-left"><span class="text"><span class="line">Switch Axe<strong> || Bow</strong></span></span></span>
                                     <span class="pull-right">
                                         <a class="left button" href="#SA" data-slide="prev"></a><a class="right button" href="#SA" data-slide="next"></a>
                                     </span>
@@ -267,13 +188,12 @@
                                                     <c:forEach items="${weapons}" var="w" varStatus="vs">
                                                         <c:if test = "${w.type == 'Switch Axe'}">
                                                             <td>
-                                                                <div class="product-box">
-                                                                    <a href="GetProduct?productno=${w.productno}"><img src ="Image/${w.productno}.png"></a>
-                                                                    <h6>
-                                                                        
-                                                                       
-                                                                        
-                                                                    </h6>
+                                                                <div class="bs-example">
+                                                                    <div class="product-box">
+                                                                        <div data-toggle="popover" title="${w.productname} [${w.type}] ${w.price}">
+                                                                            <a href="product_detail.html"><img src ="Image/${w.productno}.png"></a>
+                                                                        </div>
+                                                                    </div>
                                                                 </div>
                                                             </td>
                                                         </c:if>
@@ -288,13 +208,12 @@
                                                     <c:forEach items="${weapons}" var="w" varStatus="vs">
                                                         <c:if test = "${w.type == 'Bow'}">
                                                             <td>
-                                                                <div class="product-box">
-                                                                    <a href="GetProduct?productno=${w.productno}"><img src ="Image/${w.productno}.png"></a>
-                                                                    <h6>
-                                                                        
-                                                                       
-                                                                        
-                                                                    </h6>
+                                                                <div class="bs-example">
+                                                                    <div class="product-box">
+                                                                        <div data-toggle="popover" title="${w.productname} [${w.type}] ${w.price}">
+                                                                            <a href="product_detail.html"><img src ="Image/${w.productno}.png"></a>
+                                                                        </div>
+                                                                    </div>
                                                                 </div>
                                                             </td>
                                                         </c:if>
@@ -306,13 +225,13 @@
                                 </div>
                             </div>						
                         </div>
-                        
+
                         <!--LB & HB-->
 
                         <div class="row">
                             <div class="span12">
                                 <h4 class="title">
-                                    <span class="pull-left"><span class="text"><span class="line">Light Bowgun<strong>|| Heavy Bowgun</strong></span></span></span>
+                                    <span class="pull-left"><span class="text"><span class="line">Light Bowgun<strong> || Heavy Bowgun</strong></span></span></span>
                                     <span class="pull-right">
                                         <a class="left button" href="#LB" data-slide="prev"></a><a class="right button" href="#LB" data-slide="next"></a>
                                     </span>
@@ -325,13 +244,12 @@
                                                     <c:forEach items="${weapons}" var="w" varStatus="vs">
                                                         <c:if test = "${w.type == 'Light Bowgun'}">
                                                             <td>
-                                                                <div class="product-box">
-                                                                    <a href="GetProduct?productno=${w.productno}"><img src ="Image/${w.productno}.png"></a>
-                                                                    <h6>
-                                                                        
-                                                                       
-                                                                        
-                                                                    </h6>
+                                                                <div class="bs-example">
+                                                                    <div class="product-box">
+                                                                        <div data-toggle="popover" title="${w.productname} [${w.type}] ${w.price}">
+                                                                            <a href="product_detail.html"><img src ="Image/${w.productno}.png"></a>
+                                                                        </div>
+                                                                    </div>
                                                                 </div>
                                                             </td>
                                                         </c:if>
@@ -346,13 +264,12 @@
                                                     <c:forEach items="${weapons}" var="w" varStatus="vs">
                                                         <c:if test = "${w.type == 'Heavy Bowgun'}">
                                                             <td>
-                                                                <div class="product-box">
-                                                                    <a href="GetProduct?productno=${w.productno}"><img src ="Image/${w.productno}.png"></a>
-                                                                    <h6>
-                                                                        
-                                                                       
-                                                                        
-                                                                    </h6>
+                                                                <div class="bs-example">
+                                                                    <div class="product-box">
+                                                                        <div data-toggle="popover" title="${w.productname} [${w.type}] ${w.price}">
+                                                                            <a href="product_detail.html"><img src ="Image/${w.productno}.png"></a>
+                                                                        </div>
+                                                                    </div>
                                                                 </div>
                                                             </td>
                                                         </c:if>
@@ -364,8 +281,8 @@
                                 </div>
                             </div>						
                         </div>
-                        
-                        
+
+
                     </div>				
                 </div>
             </section>

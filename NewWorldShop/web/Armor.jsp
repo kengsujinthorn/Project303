@@ -1,9 +1,3 @@
-<%-- 
-    Document   : ItemList
-    Created on : Nov 12, 2018, 6:21:35 PM
-    Autdor     : ASUS
---%>
-
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
@@ -11,7 +5,8 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>Armor</title>
+        <link rel="icon" href="Pic/MHW-Logo.jpg" type="image/gif" sizes="16x16">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap.min.css"> 
         <script src ="https://code.jquery.com/jquery-3.3.1.js"></script>

@@ -1,9 +1,3 @@
-<%-- 
-    Document   : ItemList
-    Created on : Nov 12, 2018, 6:21:35 PM
-    Autdor     : ASUS
---%>
-
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
