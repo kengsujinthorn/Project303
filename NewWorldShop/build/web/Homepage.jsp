@@ -4,7 +4,7 @@
 <html lang="en">
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Weapon</title>
+        <title>Home</title>
         <link rel="icon" href="Pic/MHW-Logo.jpg" type="image/gif" sizes="16x16">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="">
@@ -39,18 +39,14 @@
             <section class="header_text">
                 Monster Hunter: World is an action role-playing game developed and published by Capcom. A part of the Monster Hunter series, it was released worldwide for PlayStation 4 and Xbox One in January 2018, with a Microsoft Windows version in August 2018. In the game, the player takes the role of a Hunter, tasked to hunt down and either kill or trap monsters that roam in one of several environmental spaces. If successful, the player is rewarded through loot consisting of parts from the monster and other elements that are used to craft weapons and armor, amongst other equipment. The game's core loop has the player crafting appropriate gear to be able to hunt down more difficult monsters, which in turn provide parts that lead to more powerful gear. Players may hunt alone, or can hunt in cooperative groups of up to four players via the game's online services.
             </section>
+            <hr>
             <section class="main-content">
                 <div class="row">
                     <div class="span12">													
-                        <div class="row">
-                            <div class="span12">
-                                <h4 class="title">
-                                    <span class="pull-left"><span class="text"><span class="line">Feature <strong>Products</strong></span></span></span>
-                                    <span class="pull-right">
-                                        <a class="left button" href="#myCarousel" data-slide="prev"></a><a class="right button" href="#myCarousel" data-slide="next"></a>
-                                    </span>
-                                </h4>
-                            </div>						
+                        <div>
+                            <h2>
+                                Weapon
+                            </h2>						
                         </div>
                         <br/>
 
@@ -67,7 +63,7 @@
                                 <div id="GS" class="GS carousel slide">
                                     <div class="carousel-inner">
                                         <div class="active item">
-                                            <table class ="thumbnails">
+                                            <table class ="thumbnail">
                                                 <tr>
                                                     <c:forEach items="${weapons}" var="w" varStatus="vs">
                                                         <c:if test = "${w.type == 'Great Sword'}">
@@ -75,7 +71,7 @@
                                                                 <div class="bs-example">
                                                                     <div class="product-box">
                                                                         <div data-toggle="popover" title="${w.productname} [${w.type}] ${w.price}">
-                                                                            <a href="GetProduct?productno=${w.productno}"><img src ="Image/${w.productno}.png"></a>
+                                                                            <a href="GetProduct?productno=${w.productno}"><img src ="Image/${w.productno}.png" width="120" height="120"></a>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -87,7 +83,7 @@
                                         </div>
 
                                         <div class="item">
-                                            <table class ="thumbnails">
+                                            <table class ="thumbnail">
                                                 <tr>
                                                     <c:forEach items="${weapons}" var="w" varStatus="vs">
                                                         <c:if test = "${w.type == 'Sword & Shield'}">
@@ -95,7 +91,7 @@
                                                                 <div class="bs-example">
                                                                     <div class="product-box">
                                                                         <div data-toggle="popover" title="${w.productname} [${w.type}] ${w.price}">
-                                                                            <a href="GetProduct?productno=${w.productno}"><img src ="Image/${w.productno}.png"></a>
+                                                                            <a href="GetProduct?productno=${w.productno}"><img src ="Image/${w.productno}.png" width="120" height="120"></a>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -123,7 +119,7 @@
                                 <div id="DB" class="DB carousel slide">
                                     <div class="carousel-inner">
                                         <div class="active item">
-                                            <table class ="thumbnails">
+                                            <table class ="thumbnail">
                                                 <tr>
                                                     <c:forEach items="${weapons}" var="w" varStatus="vs">
                                                         <c:if test = "${w.type == 'Dual Blade'}">
@@ -131,7 +127,7 @@
                                                                 <div class="bs-example">
                                                                     <div class="product-box">
                                                                         <div data-toggle="popover" title="${w.productname} [${w.type}] ${w.price}">
-                                                                            <a href="GetProduct?productno=${w.productno}"><img src ="Image/${w.productno}.png"></a>
+                                                                            <a href="GetProduct?productno=${w.productno}"><img src ="Image/${w.productno}.png" width="120" height="120"></a>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -143,7 +139,7 @@
                                         </div>
 
                                         <div class="item">
-                                            <table class ="thumbnails">
+                                            <table class ="thumbnail">
                                                 <tr>
                                                     <c:forEach items="${weapons}" var="w" varStatus="vs">
                                                         <c:if test = "${w.type == 'Long Sword'}">
@@ -151,7 +147,7 @@
                                                                 <div class="bs-example">
                                                                     <div class="product-box">
                                                                         <div data-toggle="popover" title="${w.productname} [${w.type}] ${w.price}">
-                                                                            <a href="GetProduct?productno=${w.productno}"><img src ="Image/${w.productno}.png"></a>
+                                                                            <a href="GetProduct?productno=${w.productno}"><img src ="Image/${w.productno}.png" width="120" height="120"></a>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -179,7 +175,7 @@
                                 <div id="SA" class="SA carousel slide">
                                     <div class="carousel-inner">
                                         <div class="active item">
-                                            <table class ="thumbnails">
+                                            <table class ="thumbnail">
                                                 <tr>
                                                     <c:forEach items="${weapons}" var="w" varStatus="vs">
                                                         <c:if test = "${w.type == 'Switch Axe'}">
@@ -187,7 +183,7 @@
                                                                 <div class="bs-example">
                                                                     <div class="product-box">
                                                                         <div data-toggle="popover" title="${w.productname} [${w.type}] ${w.price}">
-                                                                            <a href="GetProduct?productno=${w.productno}"><img src ="Image/${w.productno}.png"></a>
+                                                                            <a href="GetProduct?productno=${w.productno}"><img src ="Image/${w.productno}.png" width="120" height="120"></a>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -199,7 +195,7 @@
                                         </div>
 
                                         <div class="item">
-                                            <table class ="thumbnails">
+                                            <table class ="thumbnail">
                                                 <tr>
                                                     <c:forEach items="${weapons}" var="w" varStatus="vs">
                                                         <c:if test = "${w.type == 'Bow'}">
@@ -207,7 +203,7 @@
                                                                 <div class="bs-example">
                                                                     <div class="product-box">
                                                                         <div data-toggle="popover" title="${w.productname} [${w.type}] ${w.price}">
-                                                                            <a href="GetProduct?productno=${w.productno}"><img src ="Image/${w.productno}.png"></a>
+                                                                            <a href="GetProduct?productno=${w.productno}"><img src ="Image/${w.productno}.png" width="120" height="120"></a>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -235,7 +231,7 @@
                                 <div id="LB" class="LB carousel slide">
                                     <div class="carousel-inner">
                                         <div class="active item">
-                                            <table class ="thumbnails">
+                                            <table class ="thumbnail">
                                                 <tr>
                                                     <c:forEach items="${weapons}" var="w" varStatus="vs">
                                                         <c:if test = "${w.type == 'Light Bowgun'}">
@@ -243,7 +239,7 @@
                                                                 <div class="bs-example">
                                                                     <div class="product-box">
                                                                         <div data-toggle="popover" title="${w.productname} [${w.type}] ${w.price}">
-                                                                            <a href="GetProduct?productno=${w.productno}"><img src ="Image/${w.productno}.png"></a>
+                                                                            <a href="GetProduct?productno=${w.productno}"><img src ="Image/${w.productno}.png" width="120" height="120"></a>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -255,7 +251,7 @@
                                         </div>
 
                                         <div class="item">
-                                            <table class ="thumbnails">
+                                            <table class ="thumbnail">
                                                 <tr>
                                                     <c:forEach items="${weapons}" var="w" varStatus="vs">
                                                         <c:if test = "${w.type == 'Heavy Bowgun'}">
@@ -263,7 +259,7 @@
                                                                 <div class="bs-example">
                                                                     <div class="product-box">
                                                                         <div data-toggle="popover" title="${w.productname} [${w.type}] ${w.price}">
-                                                                            <a href="GetProduct?productno=${w.productno}"><img src ="Image/${w.productno}.png"></a>
+                                                                            <a href="GetProduct?productno=${w.productno}"><img src ="Image/${w.productno}.png" width="120" height="120"></a>
                                                                         </div>
                                                                     </div>
                                                                 </div>
