@@ -29,7 +29,7 @@
 	</head>
     <body>	
         <jsp:include page="Include/Header.jsp?title=Product Listing::" />
-		<div id="wrapper" class="container">
+		<div id="wrapper" class="container" style="margin-left: -10px;">
 			<section class="header_text sub">
 			<img class="pageBanner" src="Image/Banner.jpg" alt="New products" >
 				<h4><span>Product Detail</span></h4>
