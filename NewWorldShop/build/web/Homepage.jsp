@@ -23,21 +23,28 @@
     </head>
     <body>		
         <jsp:include page="Include/Header.jsp?title=Product Listing::" />
-        <div id="wrapper" class="container">         
-            <section  class="homepage-slider" id="home-slider">
-                <div class="flexslider">
-                    <ul class="slides">
-                        <li>
-                            <img src="themes/images/carousel/banner-1.jpg" alt="" />
-                        </li>
-                        <li>
-                            <img src="themes/images/carousel/banner-2.jpg" alt="" />
-                        </li>
-                    </ul>
-                </div>			
-            </section>
+        <div id="wrapper" class="container" style="margin-left: -10px;">
+            <div class="span12" style="margin: 0px;">
+                <section  class="homepage-slider" id="home-slider">
+                    <div class="flexslider">
+                        <ul class="slides">
+                            <li>
+                                <img src="themes/images/carousel/banner-1.jpg" alt=""  width="1100px" height="649px"/>
+                            </li>
+                            <li>
+                                <img src="themes/images/carousel/banner-2.jpg" alt="" width="1100px" height="649px"/>
+                            </li>
+                        </ul>
+                    </div>			
+                </section>
+            </div>
             <section class="header_text">
-                Monster Hunter: World is an action role-playing game developed and published by Capcom. A part of the Monster Hunter series, it was released worldwide for PlayStation 4 and Xbox One in January 2018, with a Microsoft Windows version in August 2018. In the game, the player takes the role of a Hunter, tasked to hunt down and either kill or trap monsters that roam in one of several environmental spaces. If successful, the player is rewarded through loot consisting of parts from the monster and other elements that are used to craft weapons and armor, amongst other equipment. The game's core loop has the player crafting appropriate gear to be able to hunt down more difficult monsters, which in turn provide parts that lead to more powerful gear. Players may hunt alone, or can hunt in cooperative groups of up to four players via the game's online services.
+                <p>Monster Hunter: World is an action role-playing game developed and published by Capcom.</p>
+                <p>A part of the Monster Hunter series, it was released worldwide for PlayStation 4 and Xbox One in January 2018, with a Microsoft Windows version in August 2018.</p>
+                <p>In the game, the player takes the role of a Hunter, tasked to hunt down and either kill or trap monsters that roam in one of several environmental spaces.</p>
+                <p>If successful, the player is rewarded through loot consisting of parts from the monster and other elements that are used to craft weapons and armor, amongst other equipment.</p>
+                <p>The game's core loop has the player crafting appropriate gear to be able to hunt down more difficult monsters, which in turn provide parts that lead to more powerful gear.</p>
+                <p>Players may hunt alone, or can hunt in cooperative groups of up to four players via the game's online services.</p>
             </section>
             <hr>
             <section class="main-content">
@@ -301,7 +308,7 @@
                     </div>
                 </div>
             </section>
-        <jsp:include page="Include/footer.jsp?title=Product Listing::" />
+            <jsp:include page="Include/footer.jsp?title=Product Listing::" />
         </div>
         <script src="themes/js/common.js"></script>
         <script src="themes/js/jquery.flexslider-min.js"></script>

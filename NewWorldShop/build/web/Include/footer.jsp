@@ -34,7 +34,7 @@
 		<![endif]-->
 	</head>
     <body>
-        <section id="footer-bar">
+        <section id="footer-bar" style="margin: 10px;">
 				<div class="row">
 					<div class="span3">
 						<h4>Navigation</h4>

@@ -54,7 +54,7 @@
     <div id="wrapper" class="container">
         <section class="navbar main-menu">
             <div class="navbar-inner main-menu">				
-                <a href="Homepage" class="logo pull-left"><h1>NEW WORLD'S SHOP</h1></a>
+                <a href="Homepage" class="logo pull-left"><h1 style="color: black">NEW WORLD'S SHOP</h1></a>
                 <nav id="menu" class="pull-right">
                     <ul>
                         <li><a href="Weapon">Weapon</a>					
