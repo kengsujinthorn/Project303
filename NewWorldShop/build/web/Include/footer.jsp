@@ -55,7 +55,7 @@
 							<li><a href="#">Newsletter</a></li>
 						</ul>
 					</div>
-					<div class="span5">
+					<div class="span4">
 						<p class="logo"><img src="themes/images/logo.png" class="site_logo" alt=""></p>
 						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. the  Lorem Ipsum has been the industry's standard dummy text ever since the you.</p>
 						<br/>
