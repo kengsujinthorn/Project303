@@ -16,8 +16,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.transaction.UserTransaction;
-import nws.JDA.Controller.WeaponJpaController;
-import nws.JDA.Weapon;
+import nws.JDA.Controller.ProductJpaController;
+import nws.JDA.Product;
 
 /**
  *
@@ -44,10 +44,10 @@ UserTransaction utx;
             response.sendError(HttpServletResponse.SC_EXPECTATION_FAILED);
         }
         else{
-           WeaponJpaController wmc = new  WeaponJpaController(utx, emf);
-            Weapon weapons = wmc.findWeapon(productno);
-            System.out.println("Product NO. : " + weapons.getProductno());
-            request.setAttribute("weapons", weapons);
+            ProductJpaController pdc = new   ProductJpaController(utx, emf);
+            Product product = pdc.findProduct(productno);
+            System.out.println("Product NO. : " + product.getProductno());
+            request.setAttribute("product", product);
             getServletContext().getRequestDispatcher("/ViewProductDetail.jsp").forward(request, response);
         }
     }

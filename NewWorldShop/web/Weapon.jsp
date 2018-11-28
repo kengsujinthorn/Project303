@@ -24,8 +24,8 @@
     </head>
     <body>
         <jsp:include page="Include/Header.jsp?title=Product Listing::" />
-        <select id="Typebox"  onkeyup="myFunction2()"> 
-            <option value="">Sort by type.</option>
+        <select id="Weaponbox"  onkeyup="myFunction2()"> 
+            <option value="">Select one...</option>
             <option value="Great Sword">Great Sword</option>
             <option value="Bow">Bow</option>
             <option value="Light Bowgun">Light Bowgun</option>
@@ -39,7 +39,7 @@
                 <input type="text" class="input-block-level search-query" id="myInput"  onkeyup="myFunction()" Placeholder="Search">
             </form>
         </div>
-        <div class="container">
+        <div class="container">  
             <table class ="table table-hover table-dark" id="weaponTable">
                 <thead>
                     <tr class ="header">
@@ -47,11 +47,8 @@
                         <th scope="col">Image</th>
                         <th scope="col">Product No.</th>
                         <th scope="col">Product Name</th>
-                        <th scope="col">Type</th>
-                        <th scope="col">AttackPower</th>
-                        <th scope="col">Affinity</th>
-                        <th scope="col">element</th>
                         <th scope="col">price</th>
+                        <th scope="col">Quantity</th>
                         <th scope="col">Add</th>
                     </tr>
                 </thead>
@@ -62,40 +59,18 @@
                             <td><img src ="Image/${w.productno}.png"widtd="120"></td>
                             <td><a href="GetProduct?productno=${w.productno}">${w.productno}</a></td> 
                             <td>${w.productname}</td>
-                            <td>${w.type}</td>
-                            <td>${w.attackpower}</td>
-                            <td>${w.affinity}</td>
-                            <td>${w.element}</td>
-                            <td>${w.price}</td>    
-                            <td><button class="btn btn-inverse" type="submit">Add to cart</button></td
+                            <td>${w.price}</td>
+                             <form action="AddToCart" method="Post">
+                            <td><input type="number" name ="quantity" id="quantity">        
+                            <input type="hidden" value="${w.productno}" name="productno">
+                            <td><button class="btn btn-inverse" type="submit">Add to cart</button></td>
+                        
+                        
+                    </form>
                         </tr>
                     </c:forEach>
                 </tbody>
             </table>
         </div>
-            <script>
-                function myFunction() {
-                    var input, filter, table, tr, td, i, select, weaponfilter;
-                    input = document.getElementById("myInput");
-                    filter = input.value.toUpperCase();
-                    table = document.getElementById("weaponTable");
-                    tr = table.getElementsByTagName("tr");
-                    select = document.getElementById("Weaponbox");
-                    weaponfilter = select.value.toUpperCase();
-
-                    for (i = 0; i < tr.length; i++) {
-                        td = tr[i].getElementsByTagName("td")[3];
-                        if (td) {
-                            if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
-                                tr[i].style.display = "";
-                            } else {
-                                tr[i].style.display = "none";
-                            }
-                        }
-                    }
-                }
-
-            </script>
-
     </body>
 </html>

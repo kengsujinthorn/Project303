@@ -20,6 +20,46 @@
         <servlet-name>LoginServlet</servlet-name>
         <servlet-class>nws.Servlet.LoginServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>LogoutSevlet</servlet-name>
+        <servlet-class>nws.Servlet.LogoutSevlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AddToCartServlet</servlet-name>
+        <servlet-class>nws.Servlet.AddToCartServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ProductServlet</servlet-name>
+        <servlet-class>nws.Servlet.ProductServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>RegisterServlet</servlet-name>
+        <servlet-class>nws.Servlet.RegisterServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>CheckoutServlet</servlet-name>
+        <servlet-class>nws.Servlet.CheckoutServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>RemoveServlet</servlet-name>
+        <servlet-class>nws.Servlet.RemoveServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>UpdateQuantityServlet</servlet-name>
+        <servlet-class>nws.Servlet.UpdateQuantityServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>RemoveAllServlet</servlet-name>
+        <servlet-class>nws.Servlet.RemoveAllServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>SearchByCategoryServlet</servlet-name>
+        <servlet-class>nws.Servlet.SearchByCategoryServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>FinalCheckoutServlet</servlet-name>
+        <servlet-class>nws.Servlet.FinalCheckoutServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>WeaponServlet</servlet-name>
         <url-pattern>/Weapon</url-pattern>
@@ -39,6 +79,46 @@
     <servlet-mapping>
         <servlet-name>LoginServlet</servlet-name>
         <url-pattern>/Login</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>LogoutSevlet</servlet-name>
+        <url-pattern>/Logout</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AddToCartServlet</servlet-name>
+        <url-pattern>/AddToCart</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ProductServlet</servlet-name>
+        <url-pattern>/Product</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>RegisterServlet</servlet-name>
+        <url-pattern>/Register</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CheckoutServlet</servlet-name>
+        <url-pattern>/Checkout</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>RemoveServlet</servlet-name>
+        <url-pattern>/Remove</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>UpdateQuantityServlet</servlet-name>
+        <url-pattern>/UpdateQuantity</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>RemoveAllServlet</servlet-name>
+        <url-pattern>/RemoveAll</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SearchByCategoryServlet</servlet-name>
+        <url-pattern>/SearchByCategory</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>FinalCheckoutServlet</servlet-name>
+        <url-pattern>/FinalCheckout</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

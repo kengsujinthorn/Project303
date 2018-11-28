@@ -39,62 +39,40 @@
                 <div class="account pull-left">
                     <img src="Pic/MHW-Logo.png" width="50px" height="50px">
                 </div>
-            </div>
-            <div class="span8">
-                <div class="account pull-right">
-                    <ul class="user-menu">				
-                        <li><a href="cart.html">Your Cart</a></li>
-                        <li><a href="checkout.html">Checkout</a></li>					
-                        <li><a href="register.html">Login</a></li>		
-                    </ul>
+                <div class="span8">
+                    <div class="account pull-right">
+                        <ul class="user-menu">				
+                            <li><a href="Checkout">Your Cart</a></li>				
+                            <li><a href="Login">Login</a></li>
+                            <li><a href="Register">Register</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div id="wrapper" class="container">
-        <section class="navbar main-menu">
-            <div class="navbar-inner main-menu">				
-                <a href="Homepage" class="logo pull-left"><h1 style="color: black">NEW WORLD'S SHOP</h1></a>
-                <nav id="menu" class="pull-right">
-                    <ul>
-                        <li><a href="Weapon">Weapon</a>					
-                            <ul>
-                                <li><a href="./products.html">Great Sword</a></li>									
-                                <li><a href="./products.html">Sword & Shield</a></li>
-                                <li><a href="./products.html">Dual Blade</a></li>
-                                <li><a href="./products.html">Long Sword</a></li>
-                                <li><a href="./products.html">Switch Axe</a></li>
-                                <li><a href="./products.html">Bow</a></li>
-                                <li><a href="./products.html">Light Bowgun</a></li>
-
-                            </ul>
-                        </li>															
-                        <li><a href="Armor">Armor</a></li>			
-                        <li><a href="./products.html">Item</a></li>							
-                    </ul>
-                </nav>
-            </div>
-        </section>
-        <script>
-            function myFunction() {
-                var input, filter, table, tr, td, i, select, weaponfilter;
-                input = document.getElementById("myInput");
-                filter = input.value.toUpperCase();
-                table = document.getElementById("weaponTable");
-                tr = table.getElementsByTagName("tr");
-                select = document.getElementById("Weaponbox");
-                weaponfilter = select.value.toUpperCase();
-
-                for (i = 0; i < tr.length; i++) {
-                    td = tr[i].getElementsByTagName("td")[3];
-                    if (td) {
-                        if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
-                            tr[i].style.display = "";
-                        } else {
-                            tr[i].style.display = "none";
-                        }
-                    }
-                }
-            }
-        </script>
+        <div id="wrapper" class="container">
+            <section class="navbar main-menu">
+                <div class="navbar-inner main-menu">				
+                    <a href="Homepage" class="logo pull-left"><img src="Image/logo.png" class="site_logo" alt=""></a>
+                    <nav id="menu" class="pull-right">
+                        <ul>
+                            <li><a href="Product">All Product</a>					
+                            </li>															
+                            </li>							
+                        </ul>
+                    </nav>
+                  
+                </div>
+            </section>
+                <c:choose>
+                        <c:when test ="${sessionScope.user !=null}">
+                            Hello<a href="Account"> ${sessionScope.user.usersname},</a>
+                            <a href="Logout"> Logout</a>
+                            Your currency : ${sessionScope.user.money} Zenny
+                        </c:when>
+                        <c:otherwise>
+                            Hello <a href ="Login"> Guest</a>
+                        </c:otherwise>
+                    </c:choose>
+        </div>
 </body>

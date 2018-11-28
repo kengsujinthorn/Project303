@@ -16,7 +16,9 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.transaction.UserTransaction;
+import nws.JDA.Controller.ProductJpaController;
 import nws.JDA.Controller.WeaponJpaController;
+import nws.JDA.Product;
 import nws.JDA.Weapon;
 
 /**
@@ -39,9 +41,9 @@ UserTransaction utx;
      */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        WeaponJpaController wmc = new WeaponJpaController(utx, emf);
-        List<Weapon> weapons = wmc.findWeaponEntities();
-        request.setAttribute("weapons",weapons);
+        ProductJpaController pmc = new ProductJpaController(utx, emf);
+        List<Product> product = pmc.findProductEntities();
+        request.setAttribute("product",product);
         getServletContext().getRequestDispatcher("/Homepage.jsp").forward(request, response);
         }
     

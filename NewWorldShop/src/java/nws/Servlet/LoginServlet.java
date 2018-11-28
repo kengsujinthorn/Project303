@@ -7,17 +7,31 @@ package nws.Servlet;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.List;
+import javax.annotation.Resource;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.PersistenceUnit;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
+import javax.transaction.UserTransaction;
+import nws.JDA.Controller.UsersJpaController;
+import nws.JDA.Controller.WeaponJpaController;
+import nws.JDA.Users;
+import nws.JDA.Weapon;
 
 /**
  *
  * @author ASUS
  */
 public class LoginServlet extends HttpServlet {
+
+    @PersistenceUnit(unitName = "NewWorldShopPU")
+    EntityManagerFactory emf;
+    @Resource
+    UserTransaction utx;
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -30,26 +44,37 @@ public class LoginServlet extends HttpServlet {
      */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        String id = request.getParameter("id");
+        String username = request.getParameter("username");
         String password = request.getParameter("password");
-        Account acc;
-        AccountJpaController accCtrl = new AccountJpaController(utx, emf);
+        System.out.println("username "+ username);
+        System.out.println("password " + password);
         HttpSession session = request.getSession(false);
-         if(session != null){
-             if(id !=null && id.length() >0 && password !=null && password.length() >0){
-                 int thisid = Integer.valueOf(id);
-                 int thispass = Integer.valueOf(password);
-                 acc = accCtrl.findAccount(thisid);
-                 if(acc != null){
-                     if(thisid == acc.getAccountid() && thispass == acc.getPin()){
-                         session.setAttribute("acc", acc);
-                         getServletContext().getRequestDispatcher("/MyAccount.jsp").forward(request, response);
-                         return;
-                     }
-                 }
-             }
+        if (session != null) {
+            if (username != null && username.length() > 0 && password != null && password.length() > 0) {
+                //String thisid = username;
+                //String thispass = password;
+                UsersJpaController UsersCtrl = new UsersJpaController(utx, emf);
+                Users user = UsersCtrl.findUsers(username);
+                if(user == null){
+                    System.out.println("Fuck you");
+                }
+                System.out.println("user "+user);
+                if (user != null) {
+                    System.out.println("user.getUsersname() : " + user.getUsersname());
+                    System.out.println("user.getPasswords() : " + user.getPasswords());
+                    if (username.equals(user.getUsersname()) && password.equals(user.getPasswords())) {
+                        System.out.println("KKK");
+                        session.setAttribute("user", user);
+                        WeaponJpaController wmc = new WeaponJpaController(utx, emf);
+                        List<Weapon> weapons = wmc.findWeaponEntities();
+                        request.setAttribute("weapons", weapons);
+                        getServletContext().getRequestDispatcher("/Homepage.jsp").forward(request, response);
+                        return;
+                    }
+                }
+            }
         }
-         getServletContext().getRequestDispatcher("/Login.jsp").forward(request, response);
+        getServletContext().getRequestDispatcher("/LoginPage.jsp").forward(request, response);
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
