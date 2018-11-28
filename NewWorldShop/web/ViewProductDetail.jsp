@@ -56,10 +56,9 @@
                                 <h4><strong>${product.price} Zenny</strong></h4>
                             </div>
                             <div class="span5">
-                                <form class="form-inline">
-                                    <p>&nbsp;</p>
-                                    <label>Quantity : </label>
-                                    <input type="text" class="span1" placeholder="1">
+                              <form action="AddToCart" method="Post" class="form-inline" >
+                                    <input type="number" name ="quantity" id="quantity" min="1" width="30%">        
+                                    <input type="hidden" value="${product.productno}" name="productno">
                                     <button class="btn btn-inverse" type="submit">Add to cart</button>
                                 </form>
                             </div>							
