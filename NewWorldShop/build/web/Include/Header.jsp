@@ -27,14 +27,12 @@
                         <img src="Pic/MHW-Logo.png" width="50px" height="50px">
                     </a>
                 </div>
-            </div>
-            <div class="span8">
-                <div class="account pull-right">
-                    <ul class="user-menu">				
-                        <li><a href="Checkout">Your Cart</a></li>				
-                        <li><a href="Login">Login</a></li>
-                        <li><a href="Register">Register</a></li>
-                    </ul>
+                <div class="span8">
+                    <div class="account pull-right">
+                        <ul class="user-menu">
+
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -44,7 +42,18 @@
                     <a href="Homepage" class="logo pull-left" title="Hompage"><h1 style="color: black">NEW WORLD'S SHOP</h1></a>
                     <nav id="menu" class="pull-right">
                         <ul>
-                            <li><a href="Product">All Product</a>		
+                                                        <c:choose>
+                            <c:when test ="${sessionScope.user !=null}">
+                            <li><a href="Checkout">Your Cart</a></li>				
+                            </c:when>
+                            <c:otherwise>
+                            <li><a href="Login">Login</a></li>
+                            <li><a href="Register">Register</a></li>
+                        </c:otherwise>
+                            </c:choose>
+                            <li><a href="Product">All Product</a>					
+                            </li>															
+                            </li>							
                         </ul>
                     </nav>
                 </div>
