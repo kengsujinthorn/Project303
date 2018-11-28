@@ -17,10 +17,10 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import javax.transaction.UserTransaction;
+import nws.JDA.Controller.ProductJpaController;
 import nws.JDA.Controller.UsersJpaController;
-import nws.JDA.Controller.WeaponJpaController;
+import nws.JDA.Product;
 import nws.JDA.Users;
-import nws.JDA.Weapon;
 
 /**
  *
@@ -46,7 +46,7 @@ public class LoginServlet extends HttpServlet {
             throws ServletException, IOException {
         String username = request.getParameter("username");
         String password = request.getParameter("password");
-        System.out.println("username "+ username);
+        System.out.println("username " + username);
         System.out.println("password " + password);
         HttpSession session = request.getSession(false);
         if (session != null) {
@@ -55,19 +55,19 @@ public class LoginServlet extends HttpServlet {
                 //String thispass = password;
                 UsersJpaController UsersCtrl = new UsersJpaController(utx, emf);
                 Users user = UsersCtrl.findUsers(username);
-                if(user == null){
-                    System.out.println("Fuck you");
+                if (user == null) {
+                    System.out.println("ไป Login ครับ");
                 }
-                System.out.println("user "+user);
+                System.out.println("user " + user);
                 if (user != null) {
                     System.out.println("user.getUsersname() : " + user.getUsersname());
                     System.out.println("user.getPasswords() : " + user.getPasswords());
                     if (username.equals(user.getUsersname()) && password.equals(user.getPasswords())) {
                         System.out.println("KKK");
                         session.setAttribute("user", user);
-                        WeaponJpaController wmc = new WeaponJpaController(utx, emf);
-                        List<Weapon> weapons = wmc.findWeaponEntities();
-                        request.setAttribute("weapons", weapons);
+                        ProductJpaController pc = new ProductJpaController(utx, emf);
+                        List<Product> product = pc.findProductEntities();
+                        request.setAttribute("product", product);
                         getServletContext().getRequestDispatcher("/Homepage.jsp").forward(request, response);
                         return;
                     }

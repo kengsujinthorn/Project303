@@ -85,6 +85,7 @@
                             <textarea rows="4" cols="50" name="address" minlength="10" maxlength="150"/></textarea><br>
                             Enter your credit no. here:<br>
                             <input type="number" name="creditno" minlength="16" maxlength="16" required/><br>
+                            Total Price :<br>
                             <input type="number" name="totalPrice" value ="${totalPrice}" readonly/><br>
                             <input type="submit" class="btn" value="Checkout"/><br>
                          </form>   
@@ -93,13 +94,6 @@
             </section>			
             <jsp:include page="Include/footer.jsp?title=Product Listing::" />
         </div>
-        <script src="themes/js/common.js"></script>
-        <script>
-            $(document).ready(function () {
-                $('#checkout').click(function (e) {
-                    document.location.href = "checkout.html";
-                });
-            });
-        </script>		
+        <script src="themes/js/common.js"></script>		
     </body>
 </html>

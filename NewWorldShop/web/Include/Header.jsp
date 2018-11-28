@@ -41,10 +41,8 @@
                 </div>
                 <div class="span8">
                     <div class="account pull-right">
-                        <ul class="user-menu">				
-                            <li><a href="Checkout">Your Cart</a></li>				
-                            <li><a href="Login">Login</a></li>
-                            <li><a href="Register">Register</a></li>
+                        <ul class="user-menu">
+
                         </ul>
                     </div>
                 </div>
@@ -56,6 +54,15 @@
                     <a href="Homepage" class="logo pull-left"><img src="Image/logo.png" class="site_logo" alt=""></a>
                     <nav id="menu" class="pull-right">
                         <ul>
+                                                        <c:choose>
+                            <c:when test ="${sessionScope.user !=null}">
+                            <li><a href="Checkout">Your Cart</a></li>				
+                            </c:when>
+                            <c:otherwise>
+                            <li><a href="Login">Login</a></li>
+                            <li><a href="Register">Register</a></li>
+                        </c:otherwise>
+                            </c:choose>
                             <li><a href="Product">All Product</a>					
                             </li>															
                             </li>							

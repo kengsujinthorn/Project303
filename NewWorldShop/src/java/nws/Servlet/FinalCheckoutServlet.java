@@ -7,6 +7,8 @@ package nws.Servlet;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.annotation.Resource;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.PersistenceUnit;
@@ -17,6 +19,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import javax.transaction.UserTransaction;
 import nws.JDA.Controller.UsersJpaController;
+import nws.JDA.Controller.exceptions.RollbackFailureException;
 import nws.JDA.Users;
 
 /**
@@ -36,13 +39,15 @@ UserTransaction utx;
      * @param response servlet response
      * @throws ServletException if a servlet-specific error occurs
      * @throws IOException if an I/O error occurs
+     * @throws nws.JDA.Controller.exceptions.RollbackFailureException
      */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
-            throws ServletException, IOException {
+            throws ServletException, IOException, RollbackFailureException, Exception {
         HttpSession session = request.getSession(false);
         String creditno = request.getParameter("creditno");
         String address = request.getParameter("address");
         String totalPrice = request.getParameter("totalPrice");
+        int result;
         Users user = (Users) session.getAttribute("user");
         UsersJpaController UsersCtrl = new UsersJpaController(utx, emf);
         if (user ==null) {
@@ -51,6 +56,9 @@ UserTransaction utx;
         if (user != null) {
             if (address != null) {
                 if (creditno.equals(user.getIdcard())) {
+                    result = user.getMoney()- Integer.valueOf(totalPrice);
+                    user.setMoney(result);
+                    UsersCtrl.edit(user);
                     getServletContext().getRequestDispatcher("/Complete.jsp").forward(request, response);
                 }
             } else {
@@ -73,7 +81,11 @@ UserTransaction utx;
         protected void doGet
         (HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-            processRequest(request, response);
+    try {
+        processRequest(request, response);
+    } catch (Exception ex) {
+        Logger.getLogger(FinalCheckoutServlet.class.getName()).log(Level.SEVERE, null, ex);
+    }
         }
 
         /**
@@ -88,7 +100,11 @@ UserTransaction utx;
         protected void doPost
         (HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-            processRequest(request, response);
+    try {
+        processRequest(request, response);
+    } catch (Exception ex) {
+        Logger.getLogger(FinalCheckoutServlet.class.getName()).log(Level.SEVERE, null, ex);
+    }
         }
 
         /**

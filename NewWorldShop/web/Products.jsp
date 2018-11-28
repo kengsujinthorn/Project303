@@ -72,8 +72,15 @@
                         <option value="Long Sword">Long Sword</option>
                         <option value="Great Sword">Great Sword</option>
                         <option value="Charge Blade">Charge Blade</option>
-                        <option value="Gunlance">Gunlance</option>
+                        <option value="Gun Lance">Gun Lance</option>
                         <option value="Hammer">Hammer</option>
+                        <option value="Insect Glaive">Insect Glaive</option>
+                        <option value="Lance">Lance</option>
+                        <option value="Hunting Horn">Hunting Horn</option>
+                        <option value="Bow">Bow</option>
+                        <option value="Heavy Bowgun">Heavy Bowgun</option>
+                        <option value="Light Bowgun">Light Bowgun</option>
+                        <option value="Switch Axe">Switch Axe</option>
                         <option value="Armor">Armor</option>
                     </select>
                 </form>

@@ -17,8 +17,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import javax.transaction.UserTransaction;
-import nws.JDA.Controller.WeaponJpaController;
-import nws.JDA.Weapon;
+import nws.JDA.Controller.ProductJpaController;
+import nws.JDA.Product;
 
 /**
  *
@@ -44,9 +44,9 @@ UserTransaction utx;
         if(session !=null){
             session.invalidate();
         }
-        WeaponJpaController wmc = new WeaponJpaController(utx, emf);
-        List<Weapon> weapons = wmc.findWeaponEntities();
-        request.setAttribute("weapons",weapons);
+       ProductJpaController pc = new ProductJpaController(utx, emf);
+        List<Product> product = pc.findProductEntities();
+        request.setAttribute("product",product);
         getServletContext().getRequestDispatcher("/Homepage.jsp").forward(request, response);
     }
 
