@@ -78,8 +78,8 @@
                         <hr/>
                         <p class="buttons center">
                         <form action="RemoveAll" method="post">    
-                            <a href="Product"><button class="btn" type="button">Continue</button></a>
-                            <input type="submit" class="btn" value="Remove All"><br>
+                            <a href="Product"><button class="btn btn-info" type="button">Continue</button></a>
+                            <input type="submit" class="btn btn-danger" value="Remove All"><br>
                         </form>
                         <form action="FinalCheckout" method="post">  
                             Enter your address here:<br>
@@ -88,7 +88,7 @@
                             <input type="number" name="creditno" minlength="16" maxlength="16" required/><br>
                             Total Price :<br>
                             <input type="number" name="totalPrice" value ="${totalPrice}" readonly/><br>
-                            <input type="submit" class="btn" value="Checkout"/><br>
+                            <input type="submit" class="btn btn-success" value="Checkout"/><br>
                         </form>   
                         </p>					
                     </div>
