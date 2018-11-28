@@ -14,11 +14,6 @@
         <script src="themes/js/superfish.js"></script>	
         <script src="themes/js/jquery.scrolltotop.js"></script>
         <script src="themes/js/jquery.fancybox.js"></script>
-        <style>
-            td{
-                font-weight: bold;
-            }
-        </style>
     </head>
     <body>	
         <jsp:include page="Include/Header.jsp?title=Product Listing::" />

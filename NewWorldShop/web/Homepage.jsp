@@ -75,11 +75,12 @@
                                                         <c:if test = "${p.type == 'Great Sword'}">
                                                             <td>
                                                                 <div data-toggle="popover" title="${p.productname} [${p.type}] ${p.price}">
-                                                                    <div class="bs-example">
-                                                                        <div class="product-box">
-                                                                            <a href="GetProduct?productno=${p.productno}"><img src ="Image/${p.productno}.png" width="120" height="120"></a>
+                                                                    <a href="GetProduct?productno=${p.productno}">
+                                                                        <div class="bs-example">
+                                                                            <div class="product-box"><img src ="Image/${p.productno}.png" width="120" height="120">
+                                                                            </div>
                                                                         </div>
-                                                                    </div>
+                                                                    </a>
                                                                 </div>
                                                             </td>
                                                         </c:if>
@@ -95,11 +96,12 @@
                                                         <c:if test = "${p.type == 'Sword And Shield'}">
                                                             <td>
                                                                 <div data-toggle="popover" title="${p.productname} [${p.type}] ${p.price}">
-                                                                    <div class="bs-example">
-                                                                        <div class="product-box">
-                                                                            <a href="GetProduct?productno=${p.productno}"><img src ="Image/${p.productno}.png" width="120" height="120"></a>
+                                                                    <a href="GetProduct?productno=${p.productno}">
+                                                                        <div class="bs-example">
+                                                                            <div class="product-box"><img src ="Image/${p.productno}.png" width="120" height="120">
+                                                                            </div>
                                                                         </div>
-                                                                    </div>
+                                                                    </a>
                                                                 </div>
                                                             </td>
                                                         </c:if>
@@ -131,11 +133,12 @@
                                                         <c:if test = "${p.type == 'Dual Blade'}">
                                                             <td>
                                                                 <div data-toggle="popover" title="${p.productname} [${p.type}] ${p.price}">
-                                                                    <div class="bs-example">
-                                                                        <div class="product-box">
-                                                                            <a href="GetProduct?productno=${p.productno}"><img src ="Image/${p.productno}.png" width="120" height="120"></a>
+                                                                    <a href="GetProduct?productno=${p.productno}">
+                                                                        <div class="bs-example">
+                                                                            <div class="product-box"><img src ="Image/${p.productno}.png" width="120" height="120">
+                                                                            </div>
                                                                         </div>
-                                                                    </div>
+                                                                    </a>
                                                                 </div>
                                                             </td>
                                                         </c:if>
@@ -151,11 +154,12 @@
                                                         <c:if test = "${p.type == 'Long Sword'}">
                                                             <td>
                                                                 <div data-toggle="popover" title="${p.productname} [${p.type}] ${p.price}">
-                                                                    <div class="bs-example">
-                                                                        <div class="product-box">
-                                                                            <a href="GetProduct?productno=${p.productno}"><img src ="Image/${p.productno}.png" width="120" height="120"></a>
+                                                                    <a href="GetProduct?productno=${p.productno}">
+                                                                        <div class="bs-example">
+                                                                            <div class="product-box"><img src ="Image/${p.productno}.png" width="120" height="120">
+                                                                            </div>
                                                                         </div>
-                                                                    </div>
+                                                                    </a>
                                                                 </div>
                                                             </td>
                                                         </c:if>
@@ -187,11 +191,12 @@
                                                         <c:if test = "${p.type == 'Switch Axe'}">
                                                             <td>
                                                                 <div data-toggle="popover" title="${p.productname} [${p.type}] ${p.price}">
-                                                                    <div class="bs-example">
-                                                                        <div class="product-box">
-                                                                            <a href="GetProduct?productno=${p.productno}"><img src ="Image/${p.productno}.png" width="120" height="120"></a>
+                                                                    <a href="GetProduct?productno=${p.productno}">
+                                                                        <div class="bs-example">
+                                                                            <div class="product-box"><img src ="Image/${p.productno}.png" width="120" height="120">
+                                                                            </div>
                                                                         </div>
-                                                                    </div>
+                                                                    </a>
                                                                 </div>
                                                             </td>
                                                         </c:if>
@@ -207,11 +212,12 @@
                                                         <c:if test = "${p.type == 'Bow'}">
                                                             <td>
                                                                 <div data-toggle="popover" title="${p.productname} [${p.type}] ${p.price}">
-                                                                    <div class="bs-example">
-                                                                        <div class="product-box">
-                                                                            <a href="GetProduct?productno=${p.productno}"><img src ="Image/${p.productno}.png" width="120" height="120"></a>
+                                                                    <a href="GetProduct?productno=${p.productno}">
+                                                                        <div class="bs-example">
+                                                                            <div class="product-box"><img src ="Image/${p.productno}.png" width="120" height="120">
+                                                                            </div>
                                                                         </div>
-                                                                    </div>
+                                                                    </a>
                                                                 </div>
                                                             </td>
                                                         </c:if>
@@ -243,11 +249,12 @@
                                                         <c:if test = "${p.type == 'Light Bowgun'}">
                                                             <td>
                                                                 <div data-toggle="popover" title="${p.productname} [${p.type}] ${p.price}">
-                                                                    <div class="bs-example">
-                                                                        <div class="product-box">
-                                                                            <a href="GetProduct?productno=${p.productno}"><img src ="Image/${p.productno}.png" width="120" height="120"></a>
+                                                                    <a href="GetProduct?productno=${p.productno}">
+                                                                        <div class="bs-example">
+                                                                            <div class="product-box"><img src ="Image/${p.productno}.png" width="120" height="120">
+                                                                            </div>
                                                                         </div>
-                                                                    </div>
+                                                                    </a>
                                                                 </div>
                                                             </td>
                                                         </c:if>
@@ -263,11 +270,12 @@
                                                         <c:if test = "${p.type == 'Heavy Bowgun'}">
                                                             <td>
                                                                 <div data-toggle="popover" title="${p.productname} [${p.type}] ${p.price}">
-                                                                    <div class="bs-example">
-                                                                        <div class="product-box">
-                                                                            <a href="GetProduct?productno=${p.productno}"><img src ="Image/${p.productno}.png" width="120" height="120"></a>
+                                                                    <a href="GetProduct?productno=${p.productno}">
+                                                                        <div class="bs-example">
+                                                                            <div class="product-box"><img src ="Image/${p.productno}.png" width="120" height="120">
+                                                                            </div>
                                                                         </div>
-                                                                    </div>
+                                                                    </a>
                                                                 </div>
                                                             </td>
                                                         </c:if>
@@ -299,11 +307,12 @@
                                                         <c:if test = "${p.type == 'Charge Blade'}">
                                                             <td>
                                                                 <div data-toggle="popover" title="${p.productname} [${p.type}] ${p.price}">
-                                                                    <div class="bs-example">
-                                                                        <div class="product-box">
-                                                                            <a href="GetProduct?productno=${p.productno}"><img src ="Image/${p.productno}.png" width="120" height="120"></a>
+                                                                    <a href="GetProduct?productno=${p.productno}">
+                                                                        <div class="bs-example">
+                                                                            <div class="product-box"><img src ="Image/${p.productno}.png" width="120" height="120">
+                                                                            </div>
                                                                         </div>
-                                                                    </div>
+                                                                    </a>
                                                                 </div>
                                                             </td>
                                                         </c:if>
@@ -319,11 +328,12 @@
                                                         <c:if test = "${p.type == 'Gunlance'}">
                                                             <td>
                                                                 <div data-toggle="popover" title="${p.productname} [${p.type}] ${p.price}">
-                                                                    <div class="bs-example">
-                                                                        <div class="product-box">
-                                                                            <a href="GetProduct?productno=${p.productno}"><img src ="Image/${p.productno}.png" width="120" height="120"></a>
+                                                                    <a href="GetProduct?productno=${p.productno}">
+                                                                        <div class="bs-example">
+                                                                            <div class="product-box"><img src ="Image/${p.productno}.png" width="120" height="120">
+                                                                            </div>
                                                                         </div>
-                                                                    </div>
+                                                                    </a>
                                                                 </div>
                                                             </td>
                                                         </c:if>
@@ -355,11 +365,12 @@
                                                         <c:if test = "${p.type == 'Hunting Horn'}">
                                                             <td>
                                                                 <div data-toggle="popover" title="${p.productname} [${p.type}] ${p.price}">
-                                                                    <div class="bs-example">
-                                                                        <div class="product-box">
-                                                                            <a href="GetProduct?productno=${p.productno}"><img src ="Image/${p.productno}.png" width="120" height="120"></a>
+                                                                    <a href="GetProduct?productno=${p.productno}">
+                                                                        <div class="bs-example">
+                                                                            <div class="product-box"><img src ="Image/${p.productno}.png" width="120" height="120">
+                                                                            </div>
                                                                         </div>
-                                                                    </div>
+                                                                    </a>
                                                                 </div>
                                                             </td>
                                                         </c:if>
@@ -375,11 +386,12 @@
                                                         <c:if test = "${p.type == 'Hammer'}">
                                                             <td>
                                                                 <div data-toggle="popover" title="${p.productname} [${p.type}] ${p.price}">
-                                                                    <div class="bs-example">
-                                                                        <div class="product-box">
-                                                                            <a href="GetProduct?productno=${p.productno}"><img src ="Image/${p.productno}.png" width="120" height="120"></a>
+                                                                    <a href="GetProduct?productno=${p.productno}">
+                                                                        <div class="bs-example">
+                                                                            <div class="product-box"><img src ="Image/${p.productno}.png" width="120" height="120">
+                                                                            </div>
                                                                         </div>
-                                                                    </div>
+                                                                    </a>
                                                                 </div>
                                                             </td>
                                                         </c:if>
@@ -411,11 +423,12 @@
                                                         <c:if test = "${p.type == 'Charge Blade'}">
                                                             <td>
                                                                 <div data-toggle="popover" title="${p.productname} [${p.type}] ${p.price}">
-                                                                    <div class="bs-example">
-                                                                        <div class="product-box">
-                                                                            <a href="GetProduct?productno=${p.productno}"><img src ="Image/${p.productno}.png" width="120" height="120"></a>
+                                                                    <a href="GetProduct?productno=${p.productno}">
+                                                                        <div class="bs-example">
+                                                                            <div class="product-box"><img src ="Image/${p.productno}.png" width="120" height="120">
+                                                                            </div>
                                                                         </div>
-                                                                    </div>
+                                                                    </a>
                                                                 </div>
                                                             </td>
                                                         </c:if>
@@ -431,11 +444,12 @@
                                                         <c:if test = "${p.type == 'Lance'}">
                                                             <td>
                                                                 <div data-toggle="popover" title="${p.productname} [${p.type}] ${p.price}">
-                                                                    <div class="bs-example">
-                                                                        <div class="product-box">
-                                                                            <a href="GetProduct?productno=${p.productno}"><img src ="Image/${p.productno}.png" width="120" height="120"></a>
+                                                                    <a href="GetProduct?productno=${p.productno}">
+                                                                        <div class="bs-example">
+                                                                            <div class="product-box"><img src ="Image/${p.productno}.png" width="120" height="120">
+                                                                            </div>
                                                                         </div>
-                                                                    </div>
+                                                                    </a>
                                                                 </div>
                                                             </td>
                                                         </c:if>
