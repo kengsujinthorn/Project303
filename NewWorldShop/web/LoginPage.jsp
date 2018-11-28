@@ -22,7 +22,8 @@
 <jsp:include page="Include/Header.jsp?title=Product Listing::" />
         <div id="wrapper" class="container">		
             <section class="header_text sub">
-                <img class="pageBanner" src="themes/images/pageBanner.png" alt="New products" >
+                <img class="pageBanner" src="Image/Banner.jpg" alt="New products">
+                <hr>
                 <h4><span>Login</span></h4>
             </section>			
             <section class="main-content">				

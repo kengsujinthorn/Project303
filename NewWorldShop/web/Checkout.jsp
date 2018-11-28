@@ -15,9 +15,10 @@
     <body>
         <jsp:include page="Include/Header.jsp?title=Product Listing::" />
         <c:set var="totalPrice" value="${0}" />
-        <div id="wrapper" class="container">			
+        <div id="wrapper" class="container">
             <section class="header_text sub">
-                <img class="pageBanner" src="themes/images/pageBanner.png" alt="New products" >
+                <img class="pageBanner" src="Pic/banner.jpg" alt="Banner" >
+                <hr>			
                 <h4><span>Shopping Cart</span></h4>
             </section>
             <section class="main-content">				
@@ -57,17 +58,17 @@
                                     <td><input type ="hidden" class="btn" name="productno" value="${c.productno}"></td>
                                     <td><input type ="submit" class="btn" value="Remove"></td>
                                 </form>
-                                        <c:set var="totalPrice" value="${(c.quantity * c.price) + totalPrice}" />
-                                    </c:forEach>
-                                <tr>
-                                    <td>&nbsp;</td>
-                                    <td>&nbsp;</td>
-                                    <td>&nbsp;</td>
-                                    <td>&nbsp;</td>
-                                    <td>&nbsp;</td>
-                                    <td>&nbsp;</td>
-                                    <td><strong>${totalPrice}</strong></td>
-                                </tr>		  
+                                <c:set var="totalPrice" value="${(c.quantity * c.price) + totalPrice}" />
+                            </c:forEach>
+                            <tr>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td><strong>${totalPrice}</strong></td>
+                            </tr>		  
                             </tbody>
                         </table>
                         <hr>
@@ -88,7 +89,7 @@
                             Total Price :<br>
                             <input type="number" name="totalPrice" value ="${totalPrice}" readonly/><br>
                             <input type="submit" class="btn" value="Checkout"/><br>
-                         </form>   
+                        </form>   
                         </p>					
                     </div>
             </section>			
