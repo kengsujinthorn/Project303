@@ -39,19 +39,19 @@
                 <div class="span3">
                     <h4>Navigation</h4>
                     <ul class="nav">
-                        <li><a href="./index.html">Index</a></li>  
-                        <li><a href="Homepage">Home page</a></li>
-                        <li><a href="AboutUs.jsp">About Us</a></li>
-                        <li><a href="Checkout">Your Cart</a></li>
-                        <li><a href="Login">Login</a></li>							
+                        <li><a href="./index.html">:: Index</a></li>  
+                        <li><a href="Homepage">:: Home page</a></li>
+                        <li><a href="AboutUs.jsp">:: About Us</a></li>
+                        <li><a href="Checkout">:: Your Cart</a></li>
+                        <li><a href="Login">:: Login</a></li>							
                     </ul>					
                 </div>
                 <div class="span4">
                     <a href="www.sit.kmutt.ac.th"><img src="Pic/logo-sit.png" title="SIT,KMUTT"></a>
                 </div>
-                <div class="span3">
+                <div class="span4">
                     <p class="logo"><img src="themes/images/logo.png" class="site_logo" alt=""></p>
-                    <p>PROJECT INT303 (WEB PROGRAMMING) IS WELL</p>
+                    <p>:: PROJECT INT303 (WEB PROGRAMMING) IS WELL</p>
                     <br/>
                 </div>					
             </div>	
