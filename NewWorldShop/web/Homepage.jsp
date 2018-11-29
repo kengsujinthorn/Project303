@@ -51,7 +51,7 @@
                     <div class="span12">													
                         <div>
                             <h2 title="Weapon">
-                                <a href="Weapon">Weapon</a>
+                                Weapon
                             </h2>						
                         </div>
                         <br/>
@@ -461,31 +461,215 @@
                                 </div>
                             </div>						
                         </div>
+                    </div>
 
-                    </div>				
-                </div>
+                    <!--AR1-->
+                    <div class="span12">													
+                        <div>
+                            <hr>
+                            <h2 title="Armor LR">
+                                Armor
+                            </h2>						
+                        </div>
+                        <br/>
+                        <div class="row">
+                            <div class="span12">
+                                <h4 class="title">
+                                    <span class="pull-left"><span class="text"><span class="line"><strong>Armor</strong></span></span></span>
+                                    <span class="pull-right">
+                                        <a class="left button" href="#AR1" data-slide="prev"></a><a class="right button" href="#AR1" data-slide="next"></a>
+                                    </span>
+                                </h4>
+                                <div id="AR1" class="AR1 carousel slide">
+                                    <div class="carousel-inner">
+                                        <div class="active item">
+                                            <table class ="thumbnail">
+                                                <tr>
+                                                    <c:forEach items="${product}" var="p" varStatus="vs" begin="1" end="11">
+                                                        <c:if test = "${p.type == 'Armor'}">
+                                                            <td>
+                                                                <div data-toggle="popover" title="${p.productname} [${p.type}] ${p.price}">
+                                                                    <a href="GetProduct?productno=${p.productno}">
+                                                                        <div class="bs-example">
+                                                                            <div class="product-box"><img src ="Image/${p.productno}.png" width="120" height="120">
+                                                                            </div>
+                                                                        </div>
+                                                                    </a>
+                                                                </div>
+                                                            </td>
+                                                        </c:if>
+                                                    </c:forEach>
+                                                </tr>
+                                                <tr>
+                                                    <c:forEach items="${product}" var="p" varStatus="vs"  begin="12" end="22">
+                                                        <c:if test = "${p.type == 'Armor'}">
+                                                            <td>
+                                                                <div data-toggle="popover" title="${p.productname} [${p.type}] ${p.price}">
+                                                                    <a href="GetProduct?productno=${p.productno}">
+                                                                        <div class="bs-example">
+                                                                            <div class="product-box"><img src ="Image/${p.productno}.png" width="120" height="120">
+                                                                            </div>
+                                                                        </div>
+                                                                    </a>
+                                                                </div>
+                                                            </td>
+                                                        </c:if>
+                                                    </c:forEach>
+                                                </tr>
+                                            </table>
+                                        </div>
+
+                                        <div class="item">
+                                            <table class ="thumbnail">
+                                                <tr>
+                                                    <c:forEach items="${product}" var="p" varStatus="vs"  begin="23" end="33">
+                                                        <c:if test = "${p.type == 'Armor'}">
+                                                            <td>
+                                                                <div data-toggle="popover" title="${p.productname} [${p.type}] ${p.price}">
+                                                                    <a href="GetProduct?productno=${p.productno}">
+                                                                        <div class="bs-example">
+                                                                            <div class="product-box"><img src ="Image/${p.productno}.png" width="120" height="120">
+                                                                            </div>
+                                                                        </div>
+                                                                    </a>
+                                                                </div>
+                                                            </td>
+                                                        </c:if>
+                                                    </c:forEach>
+                                                </tr>
+                                                <tr>
+                                                    <c:forEach items="${product}" var="p" varStatus="vs"  begin="34" end="44">
+                                                        <c:if test = "${p.type == 'Armor'}">
+                                                            <td>
+                                                                <div data-toggle="popover" title="${p.productname} [${p.type}] ${p.price}">
+                                                                    <a href="GetProduct?productno=${p.productno}">
+                                                                        <div class="bs-example">
+                                                                            <div class="product-box"><img src ="Image/${p.productno}.png" width="120" height="120">
+                                                                            </div>
+                                                                        </div>
+                                                                    </a>
+                                                                </div>
+                                                            </td>
+                                                        </c:if>
+                                                    </c:forEach>
+                                                </tr>
+                                            </table>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>						
+                        </div>
+                    </div>
+
+                    <!--AR2-->
+
+                    <div class="span12">
+                        <div class="row">
+                            <div class="span12">
+                                <h4 class="title">
+                                    <span class="pull-left"><span class="text"><span class="line"><strong>Armor</strong></span></span></span>
+                                    <span class="pull-right">
+                                        <a class="left button" href="#AR2" data-slide="prev"></a><a class="right button" href="#AR2" data-slide="next"></a>
+                                    </span>
+                                </h4>
+                                <div id="AR2" class="AR2 carousel slide">
+                                    <div class="carousel-inner">
+                                        <div class="active item">
+                                            <table class ="thumbnail">
+                                                <tr>
+                                                    <c:forEach items="${product}" var="p" varStatus="vs" begin="45" end="55">
+                                                        <c:if test = "${p.type == 'Armor'}">
+                                                            <td>
+                                                                <div data-toggle="popover" title="${p.productname} [${p.type}] ${p.price}">
+                                                                    <a href="GetProduct?productno=${p.productno}">
+                                                                        <div class="bs-example">
+                                                                            <div class="product-box"><img src ="Image/${p.productno}.png" width="120" height="120">
+                                                                            </div>
+                                                                        </div>
+                                                                    </a>
+                                                                </div>
+                                                            </td>
+                                                        </c:if>
+                                                    </c:forEach>
+                                                </tr>
+                                                <tr>
+                                                    <c:forEach items="${product}" var="p" varStatus="vs"  begin="56" end="66">
+                                                        <c:if test = "${p.type == 'Armor'}">
+                                                            <td>
+                                                                <div data-toggle="popover" title="${p.productname} [${p.type}] ${p.price}">
+                                                                    <a href="GetProduct?productno=${p.productno}">
+                                                                        <div class="bs-example">
+                                                                            <div class="product-box"><img src ="Image/${p.productno}.png" width="120" height="120">
+                                                                            </div>
+                                                                        </div>
+                                                                    </a>
+                                                                </div>
+                                                            </td>
+                                                        </c:if>
+                                                    </c:forEach>
+                                                </tr>
+                                            </table>
+                                        </div>
+
+                                        <div class="item">
+                                            <table class ="thumbnail">
+                                                <tr>
+                                                    <c:forEach items="${product}" var="p" varStatus="vs"  begin="67" end="77">
+                                                        <c:if test = "${p.type == 'Armor'}">
+                                                            <td>
+                                                                <div data-toggle="popover" title="${p.productname} [${p.type}] ${p.price}">
+                                                                    <a href="GetProduct?productno=${p.productno}">
+                                                                        <div class="bs-example">
+                                                                            <div class="product-box"><img src ="Image/${p.productno}.png" width="120" height="120">
+                                                                            </div>
+                                                                        </div>
+                                                                    </a>
+                                                                </div>
+                                                            </td>
+                                                        </c:if>
+                                                    </c:forEach>
+                                                </tr>
+                                                <tr>
+                                                    <c:forEach items="${product}" var="p" varStatus="vs"  begin="78" end="88">
+                                                        <c:if test = "${p.type == 'Armor'}">
+                                                            <td>
+                                                                <div data-toggle="popover" title="${p.productname} [${p.type}] ${p.price}">
+                                                                    <a href="GetProduct?productno=${p.productno}">
+                                                                        <div class="bs-example">
+                                                                            <div class="product-box"><img src ="Image/${p.productno}.png" width="120" height="120">
+                                                                            </div>
+                                                                        </div>
+                                                                    </a>
+                                                                </div>
+                                                            </td>
+                                                        </c:if>
+                                                    </c:forEach>
+                                                </tr>
+                                            </table>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>						
+                        </div>
+                    </div>
             </section>
             <section class="our_client">
-                <h4 class="title"><span class="text">Manufactures</span></h4>
-                <div class="row">					
-                    <div class="span2">
-                        <a href="#"><img alt="" src="themes/images/clients/14.png"></a>
-                    </div>
-                    <div class="span2">
-                        <a href="#"><img alt="" src="themes/images/clients/35.png"></a>
-                    </div>
-                    <div class="span2">
-                        <a href="#"><img alt="" src="themes/images/clients/1.png"></a>
-                    </div>
-                    <div class="span2">
-                        <a href="#"><img alt="" src="themes/images/clients/2.png"></a>
-                    </div>
-                    <div class="span2">
-                        <a href="#"><img alt="" src="themes/images/clients/3.png"></a>
-                    </div>
-                    <div class="span2">
-                        <a href="#"><img alt="" src="themes/images/clients/4.png"></a>
-                    </div>
+                <h4 class="title"><span class="text">Reference</span></h4>
+                <div class="row">				
+                        <div class="span3" title="W3SCHOOL" style="width: 120px; height: 120px;">
+                            <a href="https://www.w3schools.com"><img alt="" src="Pic/W3Schools_logo.png"></a>
+                        </div>
+                        <div class="span3" title="stackoverflow" style="width: 120px; height: 120px;">
+                            <a href="https://stackoverflow.com"><img alt="" src="Pic/stackoverflow-logo.png"></a>
+                        </div>
+                        <div class="span3" title="monsterhunterworld" style="width: 120px; height: 120px;">
+                            <a href="monsterhunterworld.com"><img alt="" src="Pic/logo.jpg"></a>
+                        </div>
+                        <div class="span3" title="monsterhunterworld wiki" style="width: 120px; height: 120px;">
+                            <a href="https://monsterhunterworld.wiki.fextralife.com"><img alt="" src="Pic/MHW-Logo.png"></a>
+                        </div>
                 </div>
             </section>
             <jsp:include page="Include/footer.jsp?title=Product Listing::" />
