@@ -7,6 +7,7 @@ package nws.Servlet;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.annotation.Resource;
@@ -18,8 +19,10 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import javax.transaction.UserTransaction;
+import nws.JDA.Controller.ProductJpaController;
 import nws.JDA.Controller.UsersJpaController;
 import nws.JDA.Controller.exceptions.RollbackFailureException;
+import nws.JDA.Product;
 import nws.JDA.Users;
 
 /**
@@ -55,6 +58,9 @@ public class AddMoneyServlet extends HttpServlet {
                 result = user.getMoney() + Integer.valueOf(money);
                 user.setMoney(result);
                 usersCtrl.edit(user);
+                 ProductJpaController pc = new ProductJpaController(utx, emf);
+                        List<Product> product = pc.findProductEntities();
+                        request.setAttribute("product", product);
                 getServletContext().getRequestDispatcher("/Homepage.jsp").forward(request, response);
             }
         }

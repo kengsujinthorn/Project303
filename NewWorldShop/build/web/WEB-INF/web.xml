@@ -60,6 +60,10 @@
         <servlet-name>FinalCheckoutServlet</servlet-name>
         <servlet-class>nws.Servlet.FinalCheckoutServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>AddMoneyServlet</servlet-name>
+        <servlet-class>nws.Servlet.AddMoneyServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>WeaponServlet</servlet-name>
         <url-pattern>/Weapon</url-pattern>
@@ -119,6 +123,10 @@
     <servlet-mapping>
         <servlet-name>FinalCheckoutServlet</servlet-name>
         <url-pattern>/FinalCheckout</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AddMoneyServlet</servlet-name>
+        <url-pattern>/AddMoney</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
