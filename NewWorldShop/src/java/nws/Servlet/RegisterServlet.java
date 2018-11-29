@@ -61,8 +61,10 @@ public class RegisterServlet extends HttpServlet {
                 user.setPasswords(password);
                 user.setEmail(email);
                 user.setIdcard(cardno);
+                user.setMoney(0);
                 try {
                     UsersCtrl.create(user);
+    
                     getServletContext().getRequestDispatcher("/LoginPage.jsp").forward(request, response);
                     return;
                 } catch (Exception ex) {

@@ -20,7 +20,7 @@
         <script src="themes/js/jquery.scrolltotop.js"></script>
         <script>
             function myFunction() {
-                var input, filter, ul, li, a, i;
+                var input, filter, ul, li, a, i ,b;
                 input = document.getElementById('myInput');
                 input2 = document.getElementById('myInput2');
                 filter = input.value.toUpperCase();
@@ -29,22 +29,8 @@
                 li = ul.getElementsByTagName('li');
                 for (i = 0; i < li.length; i++) {
                     a = li[i].getElementsByTagName("a")[1];
-                    if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
-                        li[i].style.display = "";
-                    } else {
-                        li[i].style.display = "none";
-                    }
-                }
-            }
-            function myFunction2() {
-                var input, filter, ul, li, a, i;
-                input = document.getElementById('myInput2');
-                filter = input.value.toUpperCase();
-                ul = document.getElementById("myUL");
-                li = ul.getElementsByTagName('li');
-                for (i = 0; i < li.length; i++) {
-                    a = li[i].getElementsByTagName("a")[2];
-                    if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                    b = li[i].getElementsByTagName("a")[2];
+                    if (a.innerHTML.toUpperCase().indexOf(filter) > -1 && b.innerHTML.toUpperCase().indexOf(filter2) > -1) {
                         li[i].style.display = "";
                     } else {
                         li[i].style.display = "none";
@@ -65,8 +51,8 @@
                     <input type="text" id="myInput"   class ="form-search" onkeyup="myFunction()" Placeholder="Search" width="50"><br>
                 </form>
                 <form method="POST">
-                    <select id="myInput2" onchange="myFunction2()">
-                        <option value="">None</option>
+                    <select id="myInput2" onchange="myFunction()">
+                        <option value="">All</option>
                         <option value="Sword And Shield">Sword And Shield</option>
                         <option value="Dual Blade">Dual Blade</option>
                         <option value="Long Sword">Long Sword</option>
@@ -94,7 +80,7 @@
                                 <li class="span3">
                                     <div class="product-box">
                                         <span class="sale_tag"></span>												
-                                        <a href="GetProduct?productno=${p.productno}"><img alt="" src="Image/${p.productno}.png" width="120"></a><br/>
+                                        <a href="GetProduct?productno=${p.productno}"><img src="Image/${p.productno}.png" width="120"></a><br/>
                                         <a href="GetProduct?productno=${p.productno}" class="title">${p.productname}</a><br/>
                                         <a href="#" class="category">${p.type}</a>
                                         <p class="price">${p.price} Zenny</p>
