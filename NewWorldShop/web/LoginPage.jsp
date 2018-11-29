@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>Bootstrap E-commerce Templates</title>
+        <title>Login</title>
         <link rel="icon" href="Pic/MHW-Logo.jpg" type="image/gif" sizes="16x16">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="">

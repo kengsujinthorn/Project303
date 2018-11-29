@@ -52,7 +52,7 @@
                             <li><a href="Register">Register</a></li>
                         </c:otherwise>
                             </c:choose>
-                            <li><a href="Product">All Product</a>					
+                            <li><a href="Product">All Products</a>					
                             </li>															
                             </li>							
                         </ul>

@@ -2,6 +2,7 @@
     <head>
         <meta charset="utf-8">
         <title>${product.productname}</title>
+        <link rel="icon" href="Pic/MHW-Logo.jpg" type="image/gif" sizes="16x16">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="">
         <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">      
@@ -61,6 +62,7 @@
                                     <input type="hidden" value="${product.productno}" name="productno">
                                     <button class="btn btn-inverse" type="submit"  title="Add">Add to cart</button>
                                 </form>
+                                    <a href="Product"><button class="btn btn-info" type="button" title="All Product">Back to All Products</button></a>
                             </div>							
                         </div>
                     </div>

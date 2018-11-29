@@ -3,7 +3,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>Product</title>
+        <title>Products</title>
         <link rel="icon" href="Pic/MHW-Logo.jpg" type="image/gif" sizes="16x16">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="">
@@ -82,7 +82,7 @@
                                         <span class="sale_tag"></span>												
                                         <a href="GetProduct?productno=${p.productno}"><img src="Image/${p.productno}.png" width="120"></a><br/>
                                         <a href="GetProduct?productno=${p.productno}" class="title">${p.productname}</a><br/>
-                                        <a href="#" class="category">${p.type}</a>
+                                        ${p.type}
                                         <p class="price">${p.price} Zenny</p>
                                     </div>
                                 </li>

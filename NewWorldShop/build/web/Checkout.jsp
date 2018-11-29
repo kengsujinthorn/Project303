@@ -11,6 +11,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Check out</title>
+        <link rel="icon" href="Pic/MHW-Logo.jpg" type="image/gif" sizes="16x16">
     </head>
     <body>
         <jsp:include page="Include/Header.jsp?title=Product Listing::" />
