@@ -44,7 +44,8 @@
                         <ul>
                                                         <c:choose>
                             <c:when test ="${sessionScope.user !=null}">
-                            <li><a href="Checkout">Your Cart</a></li>				
+                            <li><a href="Checkout">Your Cart</a></li>
+                            <li><a href="AddMoney">Add money(For Tester)</a></li>
                             </c:when>
                             <c:otherwise>
                             <li><a href="Login">Login</a></li>
