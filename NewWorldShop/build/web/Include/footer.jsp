@@ -42,8 +42,7 @@
                         <li><a href="./index.html">:: Index</a></li>  
                         <li><a href="Homepage">:: Home page</a></li>
                         <li><a href="AboutUs.jsp">:: About Us</a></li>
-                        <li><a href="Checkout">:: Your Cart</a></li>
-                        <li><a href="Login">:: Login</a></li>							
+                        <li><a href="Checkout">:: Your Cart</a></li>					
                     </ul>					
                 </div>
                 <div class="span4">

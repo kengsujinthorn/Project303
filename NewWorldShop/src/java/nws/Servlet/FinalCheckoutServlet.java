@@ -65,7 +65,7 @@ public class FinalCheckoutServlet extends HttpServlet {
                     result = user.getMoney() - Integer.valueOf(totalPrice);
                     user.setMoney(result);
                     UsersCtrl.edit(user);
-                    getServletContext().getRequestDispatcher("/Complete.jsp").forward(request, response);
+                    getServletContext().getRequestDispatcher("/Purchase.jsp").forward(request, response);
                 }
                 else {
                 getServletContext().getRequestDispatcher("/Checkout.jsp").forward(request, response);

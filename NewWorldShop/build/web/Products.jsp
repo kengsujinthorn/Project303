@@ -44,7 +44,7 @@
         <div id="wrapper" class="container">
             <section class="header_text sub">
                 <img class="pageBanner" src="Image/Banner.jpg" alt="New products" >
-                <h4><span>New products</span></h4>
+                <h4><span>All Products</span></h4>
             </section>
             <section class="main-content">
                 <form method="POST">
@@ -95,9 +95,15 @@
                         <div class="block">	
                             <ul class="nav nav-list">
                                 <li class="nav-header">Menu</li>
+                                   <c:choose>
+                                <c:when test ="${sessionScope.user !=null}">
                                 <li><a href="Checkout">Your Cart</a></li>
+                                </c:when>
+                                <c:otherwise>
                                 <li><a href="Login">Login</a></li>
                                 <li><a href="Register">Register</a></li>
+                                </c:otherwise>
+                                </c:choose>
                             </ul>
                             <br/>
                         </div>
