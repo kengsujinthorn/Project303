@@ -325,7 +325,7 @@
                                             <table class ="thumbnail">
                                                 <tr>
                                                     <c:forEach items="${product}" var="p" varStatus="vs">
-                                                        <c:if test = "${p.type == 'Gunlance'}">
+                                                        <c:if test = "${p.type == 'Gun Lance'}">
                                                             <td>
                                                                 <div data-toggle="popover" title="${p.productname} [${p.type}] ${p.price}">
                                                                     <a href="GetProduct?productno=${p.productno}">
