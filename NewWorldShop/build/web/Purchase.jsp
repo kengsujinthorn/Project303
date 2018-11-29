@@ -12,7 +12,7 @@
                 <hr>			
                 <h1>Purchase Complete.</h1>
                 <h3>Thank you so much for your purchase.</h3> 
-                <a href="Homepage"><button type="button" class="btn btn-success">Back to Home page</button></a>
+                <a href="Homepage"><button type="button" class="btn btn-success" title="Homepage">Back to Home page</button></a>
             </section>
             <jsp:include page="Include/footer.jsp?title=Product Listing::" />
         </div>

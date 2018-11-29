@@ -78,7 +78,7 @@
                         <hr/>
                         <p class="buttons center">
                         <form action="RemoveAll" method="post">    
-                            <a href="Product"><button class="btn btn-info" type="button">Continue</button></a>
+                            <a href="Product"><button class="btn btn-info" type="button" title="All Product">Continue Shopping</button></a>
                             <input type="submit" class="btn btn-danger" value="Remove All"><br>
                         </form>
                         <form action="FinalCheckout" method="post">  

@@ -42,15 +42,15 @@
                     <a href="Homepage" class="logo pull-left" title="Hompage"><h1 style="color: black">NEW WORLD'S SHOP</h1></a>
                     <nav id="menu" class="pull-right">
                         <ul>
-                                                        <c:choose>
-                            <c:when test ="${sessionScope.user !=null}">
-                            <li><a href="Checkout">Your Cart</a></li>				
-                            </c:when>
-                            <c:otherwise>
-                            <li><a href="Login">Login</a></li>
-                            <li><a href="Register">Register</a></li>
-                        </c:otherwise>
-                            </c:choose>
+                            <c:choose>
+                                <c:when test ="${sessionScope.user !=null}">
+                                    <li><a href="Checkout">Your Cart</a></li>				
+                                    </c:when>
+                                    <c:otherwise>
+                                    <li><a href="Login">Login</a></li>
+                                    <li><a href="Register">Register</a></li>
+                                    </c:otherwise>
+                                </c:choose>
                             <li><a href="Product">All Product</a>					
                             </li>															
                             </li>							

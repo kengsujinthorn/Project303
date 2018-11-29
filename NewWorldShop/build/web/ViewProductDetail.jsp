@@ -59,7 +59,7 @@
                               <form action="AddToCart" method="Post" class="form-inline" >
                                     <input type="number" name ="quantity" id="quantity" min="1" width="30%">        
                                     <input type="hidden" value="${product.productno}" name="productno">
-                                    <button class="btn btn-inverse" type="submit">Add to cart</button>
+                                    <button class="btn btn-inverse" type="submit"  title="Add">Add to cart</button>
                                 </form>
                             </div>							
                         </div>

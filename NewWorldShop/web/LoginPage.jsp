@@ -45,7 +45,7 @@
                                     </div>
                                 </div>
                                 <div class="control-group">
-                                    <input tabindex="3" class="btn btn-inverse large" type="submit" value="Login">
+                                    <input tabindex="3" class="btn btn-inverse large" type="submit" value="Login" title="Login">
                                     <hr>
                                    
                                 </div>

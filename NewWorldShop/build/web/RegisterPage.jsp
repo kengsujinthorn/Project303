@@ -17,7 +17,6 @@
             <section class="header_text sub">
                 <img class="pageBanner" src="Image/Banner.jpg" alt="New products">
                 <hr>
-                <h4><span>Login</span></h4>
             </section>			
             <section class="main-content">				
                 <div class="row">
@@ -50,7 +49,7 @@
                                     </div>
                                 </div>
                                 <div class="control-group">
-                                    <input tabindex="3" class="btn btn-inverse large" type="submit" value="Register">
+                                    <input tabindex="3" class="btn btn-inverse large" type="submit" value="Register" title="Registe">
                                     <hr>
                                 </div>
                             </fieldset>
