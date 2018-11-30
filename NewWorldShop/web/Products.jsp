@@ -82,7 +82,7 @@
                                         <span class="sale_tag"></span>												
                                         <a href="GetProduct?productno=${p.productno}"><img src="Image/${p.productno}.png" width="120"></a><br/>
                                         <a href="GetProduct?productno=${p.productno}" class="title">${p.productname}</a><br/>
-                                        ${p.type}
+                                        <a>${p.type}</a>
                                         <p class="price">${p.price} Zenny</p>
                                     </div>
                                 </li>

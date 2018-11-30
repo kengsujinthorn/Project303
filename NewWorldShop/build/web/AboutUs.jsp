@@ -48,7 +48,7 @@
                             <th class="span6">
                                 <a href="https://www.facebook.com/Keng.Sujinthorn" title="FB:L'eng"><div class="card">
                                     <img src="Pic/Team Pic/Keng.jpg" style="width:100%">
-                                    <h4><b>Keng,Sujinthorn Chotikarn </b></h4> 
+                                    <h4><b>Keng, Sujinthorn Chotikarn </b></h4> 
                                     <p>60130500090</p> 
                                 </div></a>
                             </th>
