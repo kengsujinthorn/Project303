@@ -18,7 +18,6 @@ import javax.servlet.http.HttpServletResponse;
 import javax.transaction.UserTransaction;
 import nws.JDA.Controller.ProductJpaController;
 import nws.JDA.Product;
-import nws.JDA.Weapon;
 
 /**
  *

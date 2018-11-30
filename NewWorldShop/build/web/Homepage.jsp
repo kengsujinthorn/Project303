@@ -659,16 +659,16 @@
                 <h4 class="title"><span class="text">Reference</span></h4>
                 <div class="row">				
                         <div class="span3" title="W3SCHOOL" style="width: 120px; height: 120px;">
-                            <a href="www.w3schools.com"><img alt="" src="Pic/W3Schools_logo.png"></a>
+                            <a href="https://www.w3schools.com"><img alt="" src="Pic/W3Schools_logo.png"></a>
                         </div>
                         <div class="span3" title="stackoverflow" style="width: 120px; height: 120px;">
-                            <a href="stackoverflow.com"><img alt="" src="Pic/stackoverflow-logo.png"></a>
+                            <a href="https://stackoverflow.com"><img alt="" src="Pic/stackoverflow-logo.png"></a>
                         </div>
                         <div class="span3" title="monsterhunterworld" style="width: 120px; height: 120px;">
-                            <a href="monsterhunterworld.com"><img alt="" src="Pic/logo.jpg"></a>
+                            <a href="https://monsterhunterworld.com"><img alt="" src="Pic/logo.jpg"></a>
                         </div>
                         <div class="span3" title="monsterhunterworld wiki" style="width: 120px; height: 120px;">
-                            <a href="monsterhunterworld.wiki.fextralife.com"><img alt="" src="Pic/MHW-Logo.png"></a>
+                            <a href="https://monsterhunterworld.wiki.fextralife.com"><img alt="" src="Pic/MHW-Logo.png"></a>
                         </div>
                 </div>
             </section>

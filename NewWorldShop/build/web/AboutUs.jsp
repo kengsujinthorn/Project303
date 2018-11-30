@@ -30,7 +30,7 @@
                     <table>
                         <tr>
                             <th class="span6">
-                                <a href="www.facebook.com/Pattaya.Eyedee" title="FB:Pattaya Eye-dee"><div class="card">
+                                <a href="https://www.facebook.com/Pattaya.Eyedee" title="FB:Pattaya Eye-dee"><div class="card">
                                     <img src="Pic/Team Pic/Nort.jpg" style="width:100%">
                                     <div>
                                         <h4><b>North, Pattaya Eye-Dee</b></h4> 
@@ -39,14 +39,14 @@
                                 </div></a>
                             </th>
                             <th class="span6">
-                                <a href="www.facebook.com/Nosser.darkangel" title="FB:Ratjakorn Sornchai"><div class="card">
+                                <a href="https://www.facebook.com/Nosser.darkangel" title="FB:Ratjakorn Sornchai"><div class="card">
                                     <img src="Pic/Team Pic/Nont.jpg" style="width:100%">
                                     <h4><b>Nont, Ratjakorn Sornchai </b></h4> 
                                     <p>60130500078</p> 
                                 </div></a>
                             </th>
                             <th class="span6">
-                                <a href="www.facebook.com/Keng.Sujinthorn" title="FB:L'eng"><div class="card">
+                                <a href="https://www.facebook.com/Keng.Sujinthorn" title="FB:L'eng"><div class="card">
                                     <img src="Pic/Team Pic/Keng.jpg" style="width:100%">
                                     <h4><b>Keng,Sujinthorn Chotikarn </b></h4> 
                                     <p>60130500090</p> 

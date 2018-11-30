@@ -46,7 +46,7 @@
                     </ul>					
                 </div>
                 <div class="span4">
-                    <a href="www.sit.kmutt.ac.th"><img src="Pic/logo-sit.png" title="SIT,KMUTT"></a>
+                    <a href="https://www.sit.kmutt.ac.th"><img src="Pic/logo-sit.png" title="SIT,KMUTT"></a>
                 </div>
                 <div class="span4">
                     <p class="logo"><img src="themes/images/logo.png" class="site_logo" alt=""></p>
